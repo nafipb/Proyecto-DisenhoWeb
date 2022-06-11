@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
     background-image: repeating-linear-gradient(90deg, rgb(202, 118, 118), rgb(186, 221, 32) 20px, #9c9797 20px);
@@ -77,6 +78,7 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    transform: translate(-3em);
 }
 .servicios{
     display:flex;
@@ -114,6 +116,7 @@ body{
     align-content: space-between;
     overflow: hidden;
     width:90% ;
+    transform: translate(-3em);
 }
 .galeria, .a1, img{
     display: inline-block;
@@ -131,6 +134,16 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-between;
+    transform: translate(-3em);
+}
+.logo{
+    transition: width 2s, height 2s, transform 2s;
+}
+.logo:hover {
+     width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+
 }
 .Principal{
     display: flex;
@@ -138,6 +151,7 @@ body{
     justify-content: space-between;
     background-image: url(./vgde.jpg);
     opacity: 0.8;
+    transform: translate(-3em);
 }
 .somos, .mamu{
     width:45%;
@@ -150,10 +164,11 @@ body{
 .tabla{
     display: flex;
     flex-wrap: wrap;
+    transform: translate(-2.5em);
+    animation: float 1s infinite alternate;
 }
 thead, tbody{
     width: 90%;
-
 }
 th,td{
     border:solid 5px black; 
@@ -171,9 +186,88 @@ tr:hover td{
     color: rgb(171, 84, 31);
     cursor: pointer;
 }
+/* burbujas */
+@keyframes flotar {
+  to {
+    margin-top: 15vh;
+  }
+}
+.burbujas div {
+  background: rgb(46, 141, 185);
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  animation: animarburbujas 4s linear infinite;
+}
+
+.burbujas div:nth-child(1) {
+  width: 50px;
+  height: 45px;
+  left: 40px;
+  animation-duration: 4s;
+}
+
+.burbujas div:nth-child(2) {
+  width: 60px;
+  height: 55px;
+  left: 25%;
+  animation-duration: 8s;
+}
+
+.burbujas div:nth-child(3) {
+  width: 30px;
+  height: 27px;
+  left: 40%;
+  animation-duration: 5s;
+}
+.burbujas div:nth-child(4) {
+  width: 65px;
+  height: 60px;
+  left: 50%;
+  animation-duration: 10s;
+}
+.burbujas div:nth-child(5) {
+    width: 55px;
+    height: 50px;
+    left: 65%;
+    animation-duration: 6.5s;
+  }
+  
+  .burbujas div:nth-child(6) {
+    width: 50px;
+    height: 48px;
+    left: 85%;
+    animation-duration: 9s;
+  }
+  .burbujas div:nth-child(7) {
+    width: 35px;
+    height: 32px;
+    left: 90%;
+    animation-duration: 6s;
+  }
+@keyframes animarburbujas {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    3% {
+      width: 30px;
+      height: 27px;
+    }
+    50% {
+      margin-left: 20px;
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotate(90deg);
+      bottom: 100vh;
+      background: rgb(27, 143, 197);
+    }
+  }
 .order{
     display: flex;
     flex-wrap: wrap;
+    transform: translate(-2em);
 }
 .pedir, .registro{
     width: 80%;
@@ -186,6 +280,7 @@ tr:hover td{
 .contact{
     display: flex;
     flex-wrap: wrap;
+    transform: translate(1em);
 }
 /*responsive*/
 /*para tables*/
