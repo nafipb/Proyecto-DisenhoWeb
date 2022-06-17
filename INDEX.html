@@ -9,68 +9,76 @@
 	<title>Proyecto:Diseño Web</title>
 </head>	
 <body>
-	<div class="contenedor">
+	<div class="container">
 		<!-- Inicio de logo + nav --> 
-		<header class="header">
-			<article class="nombre">
-				<h1 class="titulo">La sazón de doña Luci!</h1>
-				<p class="subtitulos">Restaurante Vallegrandino</p>
-			</article>	
-			<div class="lis">
-				<a href="pages/CONTACTO.html"><button class="B2">Iniciar sección</button></a>
-				<a href="pages/CONTACTO.html"><button class="B2">Registrarse</button></a>
-			</div>
-		</header>
-		<nav class="servicios">
-			<ul>
-				<li><a href="index.html" class="pages"><button class="B1">INICIO</button> </a></li>
-				<li><a href="pages/nosotros.html"class="pages"><button class="B1">NOSOTROS</button></a></li>
-				<li><a href="pages/menu.html"class="pages"><button class="B1">MENU</button></a></li>
-				<li><a href="pages/extras.html"class="pages"><button class="B1">EXTRAS</button></a></li>
-				<li><a href="pages/envios.html"class="pages"><button class="B1">ENVIOS</button></a></li>
-				<li><a href="pages/contacto.html"class="pages"><button class="B1">CONTACTO</button></a></li>
-			</ul>	
-		</nav>
-		<!-- cierre de fila logo + nav -->
-		<!-- Inicio de información de mi sitio -->
-		<section class="intro">
-			<article class="donalu">
-				<h4 class="subtitulos">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h4> 
-				<p class="parrafo">Nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
-				<hr>
-			</article>
-			<div>
-				<p class="parrafo"><a href="pages/menu.html">Veamos el Menu :)</a></p>
-			</div>
-		</section>
+		<div class="row align-items-start p-3">
+			<header class="col-12 mt-4 mb-5 mr-2 p-4" style="background-image: url(./pages/CSS/fondo.JPG)">
+				<div class="contenedor d-flex">
+					<div class="col-9 text-left">
+						<h1> La sazón de doña Luci</h1>
+						<p >Restaurante Vallegrandino</p>
+					</div>
+					<div class=" col-3 text-right">
+                    	<a href="pages/contacto.html"><button class="B2">Iniciar sección</button></a>
+                    	<a href="pages/contacto.html"><button class="B2">Registrarse</button></a>
+					</div>
+				</div>
+			</header>
+			<nav class="col-7 mt-2 p-3 b-2">
+				<ul class="nav nav-pills" class="btn-group">
+					<li class="nav-item"><button type="button" class="btn btn-warning"><a class="nav-link" href="index.html">INICIO</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-warning"><a class="nav-link" href="pages/nosotros.html">NOSOTROS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-warning"><a class="nav-link" href="pages/menu.html">MENU</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-warning"><a class="nav-link" href="pages/extras.html">EXTRAS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-warning"><a class="nav-link" href="pages/envios.html">ENVIOS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-warning"><a class="nav-link" href="pages/contacto.html">CONTACTO</a></li></button>
+				</ul>	
+			</nav>
+			<!-- cierre de fila logo + nav -->
+			<!-- Inicio de información de mi sitio -->
+			<section class="col-5 mt-2 bg-warning text-white">
+				<article class="donalu">
+                    <h4 class="subtitulos">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h4> 
+                    <p class="parrafo">Nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
+                    <hr>	
+                </article>
+				<div>
+					<button type="button" class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#demo"><a href="pages/menu.html">Veamos el Menu</button></a>
+				</div>
+			</section>
 			<!-- fin de intro -->
 			<!--inicio de articulo-->
-		<div class="galeria">
-			<div class="a1">
-				<img src="IMAGENES/food.JPG" alt="food.JPG"class="foto1">
-			</div>
-			<div class="a1">
-				<img src="IMAGENES/asadito.jpg" alt="asadito.JPG" class="foto2">
-			</div>
-			<div class="a1">
-				<img src="IMAGENES/chicharron.jpg" alt="chicharron.jpg" class="foto3">
-			</div>
-			<div class="a1">
-				<img src="IMAGENES/food.JPG" alt="food.JPG" class="foto4">
-			</div>
-		</div>
+			<section class="col-12 mt-4 mb-5 bg-warning">
+				<div class="contenedor d-flex">
+					<div class="col-3">
+                    	<img src="IMAGENES/food.JPG" alt="food.JPG" class="rounded-circle img-fluid">
+                	</div>
+                	<div class="col-3">
+                    	<img src="IMAGENES/asadito.jpg" alt="asadito.JPG" class="rounded-circle img-fluid">
+                	</div>
+                	<div class="col-3">
+                    	<img src="IMAGENES/chicharron.jpg" alt="chicharron.jpg"class="rounded-circle img-fluid">
+                	</div>
+                	<div class="col-3">
+                    	<img src="IMAGENES/food.JPG" alt="food.JPG"class="rounded-circle img-fluid">
+               	 	</div>
+				</div>	
+			</section>
 			<!-- fin de articulo -->
 			<!--inicio de footer-->
-		<footer class="footer">
-			<div>
-				<a href="https://www.facebook.com/profile.php?id=100057362952927" class="parrafo">Estamos en Facebook</a>
-				<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
-			</div>
-			<div>
-				<img src="./IMAGENES/logo.png" alt="logo.png" class="logo">
-			</div>
-		</footer>
-		<!--fin de footer-->
+			<footer class="col-12 mt-4 mb-5 mr-2 p-4", style="background-image: linear-gradient(to right, rgb(110, 110, 117), rgb(163, 75, 72), rgb(124, 117, 117))">
+				<div class="container d-flex">
+					<div class="col-7">
+						<a href="https://www.facebook.com/profile.php?id=100057362952927" class="parrafo">Estamos en Facebook</a>
+						<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
+					</div>
+					<div class="col-5">
+						<img src="./IMAGENES/logo.png" alt="logo.png" class="logo">
+					</div>
+				</div>
+			</footer>
+			<!--fin de footer-->
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
