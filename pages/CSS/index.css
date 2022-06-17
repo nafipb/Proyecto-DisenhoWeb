@@ -85,25 +85,7 @@ body{
     flex-flow: row wrap;
     align-content: space-between;
     flex-grow: 3;
-
 }   
-.servicios li{
-    display: inline-flex;
-}
-.pages .B1{
-    cursor: pointer;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff0052), to(#8e2b88));
-    background: -o-gradient(linear, left top, left bottom, from(#ff0052), to(#8e2b88));
-    -webkit-background-clip: text;
-}
-.servicios li a:hover{
-    background: rgb(148, 148, 55);
-}
-.servicios, ul, li, .B1{
-    height: auto;
-    font-size: 1em;
-}
 .intro{
     display: flex;
     flex-grow: 1;
@@ -143,7 +125,6 @@ body{
      width: 150px;
     height: 150px;
     transform-style: preserve-3d;
-
 }
 .Principal{
     display: flex;
