@@ -1,90 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, inicial-scaled=1.0">
-	<link rel="stylesheet" href="CSS/index.css">
-	<title>Proyecto: Diseño Web</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="CSS/index.css"/>
+	<title>Proyecto:Diseño Web</title>
 </head>
 <body>
-	<div class="contenedor">
+	<div class="container">
 		<!-- Inicio de logo + nav --> 
-		<header class="header">
-			<article class="nombre">
-				<h1 class="titulo">La sazón de doña Luci!</h1>
-				<p class="parrafo">Restaurante Vallegrandino</p>	
-			</article>
-		</header>	
-		<nav class="servicios">
-			<ul>
-				<li><a href="../index.html" class="pages"><button class="B1">INICIO</button> </a></li>
-				<li><a href="nosotros.html"class="pages"><button class="B1">NOSOTROS</button></a></li>
-				<li><a href="menu.html"class="pages"><button class="B1">MENU</button></a></li>
-				<li><a href="extras.html"class="pages"><button class="B1">EXTRAS</button></a></li>
-				<li><a href="envios.html"class="pages"><button class="B1">ENVIOS</button></a></li>
-				<li><a href="contacto.html"class="pages"><button class="B1">CONTACTO</button></a></li>
-			</ul>
-		</nav>
-		<!-- cierre de fila logo + nav -->
-		<!-- Inicio de la intro -->
-		<section class="intro">
-			<article>
-				<h4 class="subtitulos">Resturant la sazon de doña Lucila Lino, les da la bienvenida</h4> 				
-				<p class="parrafo">Nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
-				<hr>
-			</article>
-			<div>
-				<p class="parrafo"><a href="./menu.html" class="link">Veamos el Menu :)</a></p>
-			</div>
-		</section>
-		<!-- cierre de fila logo + nav -->
-		<!-- tabla de menu --> 
-		<table class="tabla">
-        	<thead>
-            	<tr class="fila1">
-					<th><h3 class="subtitulos">Platos tipicos</h3></th>
-					<th><h3 class="subtitulos">Precios</h3></th>
-					<th><h3 class="subtitulos">Imagen</h3></th>
-            	</tr>
-        	</thead>
-        	<tbody>
-            	<tr class="fila2">
-					<td><p class="parrafo">Asadito Colorado</p></td>
-					<td><p class="parrafo">15</p></td>
-					<td><img class="pic" src="../IMAGENES/asadito.jpg"alt="asadito.jpg"></td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr class="fila3">
-					<td><p class="parrafo">Chicharron de chancho</p></td>
-					<td><p class="parrafo">15</p></td> 
-					<td><img class="pic" src="../IMAGENES/chicharron.jpg"alt="chicharron.jpg"></td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr class="fila4">
-					<td><p class="parrafo">Escabeche de pollo</p></td>
-					<td><p class="parrafo">15</p></td> 
-					<td><img class="pic" src="../IMAGENES/escabeche.jpg"alt="escabeche.jpg"></td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr class="fila5">
-					<td><p class="parrafo">Chorizo Vallegrandino</p></td>
-					<td><p class="parrafo">15</p></td> 
-					<td><img class="pic" src="../IMAGENES/chorizo.JPG"alt="chorizo.JPG"></td>
-				</tr>
-        	</tbody>
-        	<tfoot></tfoot>
+		<div class="row align-items-start p-3">
+			<header class="col-12 mt-4 mb-5 mr-2 p-4" style="background-image: url(CSS/fondo.JPG)">
+				<div class="contenedor d-flex">
+					<div class="col-9 text-left">
+						<h1> La sazón de doña Luci</h1>
+						<p >Restaurante Vallegrandino</p>
+					</div>
+					<div class=" col-3 text-right">
+                    	<a href="contacto.html"><button class="B2">Iniciar sección</button></a>
+                    	<a href="contacto.html"><button class="B2">Registrarse</button></a>
+               	 	</div>
+				</div>
+			</header>
+			<nav class="col-12 mt-2 p-3 b-2">
+				<ul class="nav nav-pills mt-3 btn" >
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="../index.html">INICIO</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="menu.html">MENU</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="extras.html">EXTRAS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="envios.html">ENVIOS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="contacto.html">CONTACTO</a></li></button>
+				</ul>	
+			</nav>
+			<!-- cierre de fila logo + nav -->
+			<section class="col-9 mt-2 text-start">
+				<article class="donalu">
+					<h4 class="subtitulos">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h4> 
+					<p class="parrafo">Nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
+					<hr>	
+				</article>
+				<div class="nav">
+					<a class="nav-link" href="menu.html"><kbd>Veamos el Menu</kbd></a>
+				</div>
+			</section>
+			<!-- tabla de menu --> 
+			<div class="col-12 table-responsive">
+				<table class="table table-bordered text-center">
+					<thead>
+						<tr>
+							<th>Platos Principales</th>
+							<th>Precio (bs)</th>
+							<th>Muestra del plato</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Asadito colorado</td>
+							<td>15 bs</td>
+							<td><img src="../IMAGENES/asadito.jpg"alt="sopa"class="rounded-circle img-fluid"></td>
+						</tr>
+						<tr>
+							<td>chicharron</td>
+							<td>15 bs</td>
+							<td><img src="../IMAGENES/chicharron.jpg"alt="sopa"class="rounded-circle img-fluid"></td>
+						</tr>
+						<tr>
+							<td>Escabeche</td>
+							<td>15 bs</td>
+							<td><img src="../IMAGENEs/escabeche.jpg"alt="segundo"class="rounded-circle img-fluid"></td>
+						</tr>
+						<tr>
+							<td>Chorizo Vallegrandino</td>
+							<td>30 bs</td>
+							<td><img src="../IMAGENES/chorizo.JPG"alt="segundo"class="rounded-circle img-fluid"></td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- fin de tabla de menu --> 
 			<div class="burbujas">
 				<div></div>
 				<div></div>
 				<div></div>
 				<div></div>
 			  </div>
-    	</table>
-		<!-- fin de tabla de menu --> 
 		<!--inicio de footer-->
 		<footer class="footer">
 			<div>

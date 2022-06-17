@@ -1,95 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, inicial-scaled=1.0">
-	<link rel="stylesheet" href="CSS/index.css">
-	<title>Proyecto: Diseño Web</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="CSS/index.css"/>
+	<title>Proyecto:Diseño Web</title>
 </head>
 <body>
-	<div class="contenedor">
+	<div class="container">
 		<!-- Inicio de logo + nav --> 
-		<header class="header">
-			<article class="nombre">
-				<h1 class="titulo">La sazón de doña Luci!</h1>
-				<p class="parrafo">Restaurante Vallegrandino</p>	
-			</article>
-		</header>	
-		<nav class="servicios">
-			<ul>
-				<li><a href="../index.html" class="pages"><button class="B1">INICIO</button> </a></li>
-				<li><a href="nosotros.html"class="pages"><button class="B1">NOSOTROS</button></a></li>
-				<li><a href="menu.html"class="pages"><button class="B1">MENU</button></a></li>
-				<li><a href="extras.html"class="pages"><button class="B1">EXTRAS</button></a></li>
-				<li><a href="envios.html"class="pages"><button class="B1">ENVIOS</button></a></li>
-				<li><a href="contacto.html"class="pages"><button class="B1">CONTACTO</button></a></li>
-			</ul>
-		</nav>
-		<!-- cierre de fila logo + nav -->
-		<!-- Inicio de la intro -->
-		<section class="intro">
-			<article>
-				<h4 class="subtitulos">Resturant la sazon de doña Lucila Lino, les da la bienvenida</h4> 				
-				<p class="parrafo">Nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
-				<hr>
-			</article>
-			<div>
-				<p class="parrafo"><a href="./menu.html" class="link">Veamos el Menu :)</a></p>
+		<div class="row align-items-start p-3">
+			<header class="col-12 mt-4 mb-5 mr-2 p-4" style="background-image: url(CSS/fondo.JPG)">
+				<div class="contenedor d-flex">
+					<div class="col-9 text-left">
+						<h1> La sazón de doña Luci</h1>
+						<p >Restaurante Vallegrandino</p>
+					</div>
+					<div class=" col-3 text-right">
+                    	<a href="contacto.html"><button class="B2">Iniciar sección</button></a>
+                    	<a href="contacto.html"><button class="B2">Registrarse</button></a>
+               	 	</div>
+				</div>
+			</header>
+			<nav class="col-12 mt-2 p-3 b-2">
+				<ul class="nav nav-pills mt-3 btn" >
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="../index.html">INICIO</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="menu.html">MENU</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="extras.html">EXTRAS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="envios.html">ENVIOS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="contacto.html">CONTACTO</a></li></button>
+				</ul>	
+			</nav>
+			<!-- cierre de fila logo + nav -->
+			<section class="col-9 mt-2 text-start">
+				<article class="donalu">
+					<h4 class="subtitulos">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h4> 
+					<p class="parrafo">Nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
+					<hr>	
+				</article>
+				<div class="nav">
+					<a class="nav-link" href="menu.html"><kbd>Veamos el Menu</kbd></a>
+				</div>
+			</section>
+			<!-- tabla de menu --> 
+			<div class="col-12 table-responsive">
+				<table class="table table-bordered text-center">
+					<thead>
+						<tr>
+							<th>Platos Principales</th>
+							<th>Precio (bs)</th>
+							<th>Muestra del plato</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Sopa de Mani</td>
+							<td>15 bs</td>
+							<td><img src="../IMAGENES/sopa de mani.jpg"alt="sopa"class="rounded-circle img-fluid"></td>
+						</tr>
+						<tr>
+							<td>Sopa de zapallo</td>
+							<td>15 bs</td>
+							<td><img src="../IMAGENES/sopa de zapallo.jpg"alt="sopa"class="rounded-circle img-fluid"></td>
+						</tr>
+						<tr>
+							<td>Picante de gallina</td>
+							<td>30 bs</td>
+							<td><img src="../IMAGENES/picante.jpg"alt="segundo"class="rounded-circle img-fluid"></td>
+						</tr>
+						<tr>
+							<td>Chancho al Horno</td>
+							<td>30 bs</td>
+							<td><img src="../IMAGENES/chuleta.jpg"alt="segundo"class="rounded-circle img-fluid"></td>
+						</tr>
+					</tbody>
+				</table>
+        		<tfoot></tfoot>
 			</div>
-		</section>
-		<!-- cierre de fila logo + nav -->
-		<!-- tabla de menu --> 
-		<table class="tabla">
-        	<thead >
-				<tr>
-					<th><h3 class="subtitulos">Platos principales</h3></th>
-					<th><h3 class="subtitulos">Precios</h3></th>
-					<th><h3 class="subtitulos">Platos</h3></th>
-            	</tr>
-        	</thead>
-        	<tbody>
-            	<tr>
-					<td><p class="parrafo">Sopa de mani</p></td>
-					<td><p class="parrafo">15</p></td>
-					<td><img class="pic" src="../IMAGENES/sopa de mani.jpg"alt="sopa de mani.jpg"></td>
-				</tr>
-				<tr>
-					<td><p class="parrafo">Sopa de zapallo</p></td>
-					<td><p class="parrafo">15</p></td> 
-					<td><img  class="pic" src="../IMAGENES/sopa de zapallo.jpg"alt="sopa de zapallo.jpg"></td>
-				</tr>
-				<tr>
-					<td><p class="parrafo">Picante de gallina</p></td>
-					<td><p class="parrafo">30</p></td> 
-					<td><img class="pic" src="../IMAGENES/picante.jpg"alt="picante.jpg"></td>
-				</tr>
-				<tr>
-					<td><p class="parrafo">Chancho al horno</p></td>
-					<td><p class="parrafo">30</p></td> 
-					<td><img class="pic" src="../IMAGENES/chuleta.jpg"alt="chuleta.jpg"></td>
-				</tr>
-        	</tbody>
-        	<tfoot></tfoot>
 			<div class="burbujas">
 				<div></div>
 				<div></div>
 				<div></div>
 				<div></div>
 			  </div>
-    	</table>
-		<!-- fin de tabla de menu --> 
-		<!--inicio de footer-->
-		<footer class="footer">
-			<div>
-				<a href="https://www.facebook.com/profile.php?id=100057362952927" class="parrafo">Estamos en Facebook</a>
-				<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
-			</div>
-			<div>
-				<img src="../IMAGENES/logo.png" alt="logo.png" class="logo">
-			</div>
-		</footer>	
-		<!--fin de footer-->
+			<!-- fin de tabla de menu --> 
+			<!--inicio de footer-->
+			<footer class="col-12 mt-4 mb-5 mr-2 p-4", style="background-image: linear-gradient(to right, rgb(110, 110, 117), rgb(163, 75, 72), rgb(124, 117, 117))">
+				<div class="container d-flex">
+					<div class="col-7 text-start">
+						<a href="https://www.facebook.com/profile.php?id=100057362952927" class="parrafo">Estamos en Facebook</a>
+						<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
+					</div>
+					<div class="col-5">
+						<img src="../IMAGENES/logo.png" alt="logo.png" class="logo">
+					</div>
+				</div>
+			</footer>
+			<!--fin de footer-->
+		</div>
 	</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
