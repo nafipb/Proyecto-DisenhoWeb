@@ -188,7 +188,6 @@ tr:hover td{
   left: 25%;
   animation-duration: 8s;
 }
-
 .burbujas div:nth-child(3) {
   width: 30px;
   height: 27px;
@@ -206,8 +205,7 @@ tr:hover td{
     height: 50px;
     left: 65%;
     animation-duration: 6.5s;
-  }
-  
+  }  
   .burbujas div:nth-child(6) {
     width: 50px;
     height: 48px;
