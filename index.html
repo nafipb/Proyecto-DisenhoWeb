@@ -28,8 +28,15 @@
 				<ul class="nav nav-pills mt-3 btn">
 					<li class="nav-item h6"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="index.html">INICIO</a></li></button>
 					<li class="nav-item h6"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="pages/nosotros.html">NOSOTROS</a></li></button>
-					<li class="nav-item h6"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="pages/menu.html">MENU</a></li></button>
-					<li class="nav-item h6"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="pages/extras.html">EXTRAS</a></li></button>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						  MENU
+						</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="pages/menu.html">COMIDAS</a></li>
+						  <li><a class="dropdown-item" href="pages/extras.html">ESPECIALES</a></li>
+						</ul>
+					  </div>
 					<li class="nav-item h6 "><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="pages/envios.html">ENVIOS</a></li></button>
 					<li class="nav-item h6"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="pages/contacto.html">CONTACTO</a></li></button>
 				</ul>	
@@ -39,7 +46,7 @@
 			<section class="col-6 mt-2 b-2">
 				<article class="donalu">
                     <h4 class="subtitulos text-start">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h4> 
-                    <p class="parrafo text-start">Nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
+                    <p class="parrafo text-start">Somos un restaurante Vallegrandino, ubicado en vallegrande y nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
                     <hr>	
                 </article>
 				<div class="nav">
@@ -50,16 +57,49 @@
 			<!--inicio de la galeria-->
 			<section class="col-12 mt-4 mb-5 b-2">
 				<div class="contenedor d-flex">
-					<div class="col-3">
+					<div class="col-2.4">						
                     	<img src="IMAGENES/food.JPG" alt="food.JPG" class="rounded-circle img-fluid">
                 	</div>
-                	<div class="col-3">
+                	<div class="col-2.4">
                     	<img src="IMAGENES/asadito.jpg" alt="asadito.JPG" class="rounded-circle img-fluid">
+						<p>
+							<a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+							  Asadito Vallegrandino
+							</a>
+						</p>
+						<div class="collapse" id="collapseExample">
+							<div class="card card-body">
+							  Principal comida de la casa, tipica y propia de Vallegrande
+							</div>
+						</div>
                 	</div>
-                	<div class="col-3">
+                	<div class="col-2.4">
                     	<img src="IMAGENES/chicharron.jpg" alt="chicharron.jpg"class="rounded-circle img-fluid">
+						<p>
+							<a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+							  Chicharron Vallegrandino
+							</a>
+						</p>
+						<div class="collapse" id="collapseExample">
+							<div class="card card-body">
+							  Principal comida de la casa, tipica y propia de Vallegrande
+							</div>
+						</div>
                 	</div>
-                	<div class="col-3">
+					<div class="col-2.4">
+						<img src="IMAGENES/escabeche.jpg" alt="food.JPG"class="rounded-circle img-fluid">
+						<p>
+							<a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+							Escabeche Vallegrandino
+							</a>
+						</p>
+						<div class="collapse" id="collapseExample">
+							<div class="card card-body">
+							  Principal comida de la casa, tipica y propia de Vallegrande
+							</div>
+						</div>
+					</div>
+                	<div class="col-2.4">
                     	<img src="IMAGENES/food.JPG" alt="food.JPG"class="rounded-circle img-fluid">
                	 	</div>
 				</div>	

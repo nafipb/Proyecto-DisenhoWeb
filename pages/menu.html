@@ -28,8 +28,15 @@
 				<ul class="nav nav-pills mt-3 btn" >
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="../index.html">INICIO</a></li></button>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li></button>
-					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="menu.html">MENU</a></li></button>
-					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="extras.html">EXTRAS</a></li></button>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						  MENU
+						</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="menu.html">COMIDAS</a></li>
+						  <li><a class="dropdown-item" href="extras.html">ESPECIALES</a></li>
+						</ul>
+					</div>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="envios.html">ENVIOS</a></li></button>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="contacto.html">CONTACTO</a></li></button>
 				</ul>	
@@ -47,38 +54,41 @@
 			</section>
 			<!-- tabla de menu --> 
 			<div class="col-12 ">
-				<table class="table table text-center">
-					<thead>
-						<tr>
-							<th>Platos Principales</th>
-							<th>Precio (bs)</th>
-							<th>Muestra del plato</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Sopa de Mani</td>
-							<td>15 bs</td>
-							<td><img src="../IMAGENES/sopa de mani.jpg"alt="sopa"class="rounded-circle img-fluid"></td>
-						</tr>
-						<tr>
-							<td>Sopa de zapallo</td>
-							<td>15 bs</td>
-							<td><img src="../IMAGENES/sopa de zapallo.jpg"alt="sopa"class="rounded-circle img-fluid"></td>
-						</tr>
-						<tr>
-							<td>Picante de gallina</td>
-							<td>30 bs</td>
-							<td><img src="../IMAGENES/picante.jpg"alt="segundo"class="rounded-circle img-fluid"></td>
-						</tr>
-						<tr>
-							<td>Chancho al Horno</td>
-							<td>30 bs</td>
-							<td><img src="../IMAGENES/chuleta.jpg"alt="segundo"class="rounded-circle img-fluid"></td>
-						</tr>
-					</tbody>
-				</table>
-        		<tfoot></tfoot>
+				<div class="container">
+					<h2>Menu de nuestros Sabados</h2>
+					<p>El dia sabado en nuestra casa te ofrecemos el siguiente menu para que tengas un delicioso almuerzo</p>            
+					<table class="table">
+					  <thead>
+							<tr class="d-flex">
+						  		<th class="col-4">Menu</th>
+						  		<th class="col-4">Precio bs</th>
+						  		<th class="col-4">Como te servimos en casa</th>
+							</tr>
+					  </thead>
+					  <tbody>
+							<tr class="d-flex">
+						  		<td class="col-4">Sopa de mani</td>
+						 	 	<td class="col-4">15 bs</td>
+						  		<td><img src="../IMAGENES/sopa de mani.jpg"alt="sopa"class="rounded-circle img-fluid col-4"></td>
+							</tr>
+							<tr class="d-flex">
+						  		<td class="col-4">Sopa de Zapallo</td>
+						  		<td class="col-4">15 bs</td>
+						  		<td><img src="../IMAGENES/sopa de zapallo.jpg" alt="sopa" class="rounded- circle img-fluid col-4"></td>
+							</tr>
+							<tr class="d-flex">
+						 		<td class="col-4">Chuleta de chancho</td>
+						  		<td class="col-4">30 bs</td>
+						  		<td><img src="../IMAGENES/chule.jpg" alt="segundo" class="rounded- circle img-fluid col-4"></td>
+							</tr>
+							<tr class="d-flex">
+						  		<td class="col-4">Picante de pollo </td>
+						  		<td class="col-4">30 bs</td>
+						  		<td><img src="../IMAGENES/picante.jpg" alt="segundo" class="rounded- circle img-fluid col-4"></td>
+						 	</tr>
+					  </tbody>
+					</table>
+				  </div>
 			</div>
 			<div class="burbujas">
 				<div></div>

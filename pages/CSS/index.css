@@ -142,21 +142,15 @@ body{
 .mamu{
     height: 120px;
 }
-.tabla{
-    display: flex;
-    flex-wrap: wrap;
-    transform: translate(-2.5em);
-    animation: float 1s infinite alternate;
-}
 thead, tbody{
     width: 90%;
 }
 th,td{
     border:solid 5px black; 
-    background-color: #580606;
-    align-items: center;
+    padding: 1em;
     text-align: center;
-    width:80%;
+    justify-content: center;
+    width:90%;
 }
 tr:nth-child(even){
     background-color: darkgrey;
@@ -174,7 +168,7 @@ tr:hover td{
   }
 }
 .burbujas div {
-  background: rgb(46, 141, 185);
+  background: radial-gradient(darkgoldenrod gray red );
   border-radius: 100%;
   position: absolute;
   bottom: 0;

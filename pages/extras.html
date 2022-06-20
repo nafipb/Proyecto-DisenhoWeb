@@ -28,8 +28,15 @@
 				<ul class="nav nav-pills mt-3 btn" >
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="../index.html">INICIO</a></li></button>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li></button>
-					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="menu.html">MENU</a></li></button>
-					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="extras.html">EXTRAS</a></li></button>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						  MENU
+						</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="menu.html">COMIDAS</a></li>
+						  <li><a class="dropdown-item" href="extras.html">ESPECIALES</a></li>
+						</ul>
+					</div>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="envios.html">ENVIOS</a></li></button>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="contacto.html">CONTACTO</a></li></button>
 				</ul>	
@@ -46,56 +53,72 @@
 				</div>
 			</section>
 			<!-- tabla de menu --> 
-			<div class="col-12 table-responsive">
-				<table class="table table-bordered text-center">
-					<thead>
-						<tr>
-							<th>Platos Principales</th>
-							<th>Precio (bs)</th>
-							<th>Muestra del plato</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Asadito colorado</td>
-							<td>15 bs</td>
-							<td><img src="../IMAGENES/asadito.jpg"alt="sopa"class="rounded-circle img-fluid"></td>
-						</tr>
-						<tr>
-							<td>chicharron</td>
-							<td>15 bs</td>
-							<td><img src="../IMAGENES/chicharron.jpg"alt="sopa"class="rounded-circle img-fluid"></td>
-						</tr>
-						<tr>
-							<td>Escabeche</td>
-							<td>15 bs</td>
-							<td><img src="../IMAGENES/escabeche.jpg" alt="segundo"class="rounded-circle img-fluid"></td>
-						</tr>
-						<tr>
-							<td>Chorizo Vallegrandino</td>
-							<td>30 bs</td>
-							<td><img src="../IMAGENES/chorizo.JPG"alt="segundo"class="rounded-circle img-fluid"></td>
-						</tr>
-					</tbody>
-				</table>
-				<!-- fin de tabla de menu --> 
+			<!-- tabla de menu --> 
+			<div class="col-12 ">
+				<div class="container">
+					<h2>Menu de nuestros Viernes,  Sabados y domingos</h2>
+					<p> Los viernes y sabados, atendemos en casa y el domingo estamos en el mercado principal</p>            
+					<table class="table">
+					  <thead>
+							<tr class="d-flex">
+						  		<th class="col-4">Menu</th>
+						  		<th class="col-4">Precio bs</th>
+						  		<th class="col-4">Como te servimos</th>
+							</tr>
+					  </thead>
+					  <tbody>
+							<tr class="d-flex">
+						  		<td class="col-4">Asadito Vallegrandino</td>
+						 	 	<td class="col-4">15 bs</td>
+						  		<td><img src="../IMAGENES/asadito.jpg"alt="extra"class="rounded-circle img-fluid col-4"></td>
+							</tr>
+							<tr class="d-flex">
+						  		<td class="col-4">Chicharron de chancho</td>
+						  		<td class="col-4">15 bs</td>
+						  		<td><img src="../IMAGENES/chicharron.jpg" alt="extra" class="rounded- circle img-fluid col-4"></td>
+							</tr>
+							<tr class="d-flex">
+						 		<td class="col-4">Escabeche de pollo</td>
+						  		<td class="col-4">15 bs</td>
+						  		<td><img src="../IMAGENES/escabeche.jpg" alt="extra" class="rounded- circle img-fluid col-4"></td>
+							</tr>
+							<tr class="d-flex">
+						  		<td class="col-4">Chorizo Vallegrandino </td>
+						  		<td class="col-4">2bs/unidad</td>
+						  		<td><img src="../IMAGENES/chorizo.JPG" alt="extra" class="rounded- circle img-fluid col-4"></td>
+						 	</tr>
+					  </tbody>
+					</table>
+				  </div>
+			</div>
 			<div class="burbujas">
 				<div></div>
 				<div></div>
 				<div></div>
 				<div></div>
 			  </div>
-		<!--inicio de footer-->
-		<footer class="footer">
-			<div>
-				<a href="https://www.facebook.com/profile.php?id=100057362952927" class="parrafo">Estamos en Facebook</a>
-				<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
-			</div>
-			<div>
-				<img src="../IMAGENES/logo.png" alt="logo.png" class="logo">
-			</div>
-		</footer>	
-		<!--fin de footer-->
+			<div class="burbujas">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			  </div>
+			<!-- fin de tabla de menu --> 
+			<!--inicio de footer-->
+			<footer class="col-12 mt-4 mb-5 mr-2 p-4", style="background-image: linear-gradient(to right, rgb(110, 110, 117), rgb(163, 75, 72), rgb(124, 117, 117))">
+				<div class="container d-flex">
+					<div class="col-7 text-start">
+						<a href="https://www.facebook.com/profile.php?id=100057362952927" class="parrafo">Estamos en Facebook</a>
+						<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
+					</div>
+					<div class="col-5">
+						<img src="../IMAGENES/logo.png" alt="logo.png" class="logo">
+					</div>
+				</div>
+			</footer>
+			<!--fin de footer-->
+		</div>
 	</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

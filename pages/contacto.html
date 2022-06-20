@@ -28,8 +28,15 @@
 				<ul class="nav nav-pills mt-3 btn" >
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="../index.html">INICIO</a></li></button>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li></button>
-					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="menu.html">MENU</a></li></button>
-					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="extras.html">EXTRAS</a></li></button>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						  MENU
+						</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="menu.html">COMIDAS</a></li>
+						  <li><a class="dropdown-item" href="extras.html">ESPECIALES</a></li>
+						</ul>
+					</div>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="envios.html">ENVIOS</a></li></button>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="contacto.html">CONTACTO</a></li></button>
 				</ul>	
@@ -52,14 +59,18 @@
 				<h3>Formulario de Registro</h3>
 				<form class="row g-3">
 					<div class="col-md-6">
+						<label for="inputPassword4" class="form-label">Nombre de usario</label>
+						<input type="password" class="form-control" id="inputnombre" placeholder="lula">
+				  </div>
+					<div class="col-md-6">
 				  		<label for="inputEmail4" class="form-label">Correo Electronico</label>
 				  		<input type="email" class="form-control" id="inputEmail4" placeholder="lula@gmail.com">
 					</div>
 					<div class="col-md-6">
 				  		<label for="inputPassword4" class="form-label">Contraseña</label>
-				  		<input type="password" class="form-control" id="inputPassword4" placeholder="lula">
+				  		<input type="password" class="form-control" id="inputPassword4" placeholder="****">
 					</div>
-					<div class="col-12">
+					<div class="col-md-6">
 				  		<label for="inputAddress" class="form-label">Dirección</label>
 				  		<input type="text" class="form-control" id="inputAddress" placeholder="Avenida. Cristo redentor">
 					</div>
@@ -67,17 +78,13 @@
 				  		<label for="inputCity" class="form-label">Ciudad</label>
 				  		<input type="text" class="form-control" id="inputCity" placeholder="Santa Cruz">
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 				  		<label for="inputState" class="form-label">Provincia</label>
 				  		<select id="inputState" class="form-select">
 							<option selected>Seleccionar...</option>
 							<option>Vallegrande</option>
 							<option>Camiri</option>
 				  		</select>
-					</div>
-					<div class="col-md-2">
-				  		<label for="inputZip" class="form-label">Codigo postal</label>
-				  		<input type="text" class="form-control" id="inputZip">
 					</div>
 					<div class="col-12">
 				  		<div class="form-check">
