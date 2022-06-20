@@ -168,13 +168,12 @@ tr:hover td{
   }
 }
 .burbujas div {
-  background: radial-gradient(darkgoldenrod gray red );
+  background: blue;
   border-radius: 100%;
   position: absolute;
   bottom: 0;
   animation: animarburbujas 4s linear infinite;
 }
-
 .burbujas div:nth-child(1) {
   width: 50px;
   height: 45px;
