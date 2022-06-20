@@ -45,11 +45,9 @@ body{
 }
 .servicios{
     grid-column: 1/2;
-    background-color: linear-gradient(crimson, darkgoldenrod, rgb(94, 88, 91));
 }
 .intro{
     grid-column: 2/3;
-    background-color: darkgoldenrod;
 }
 .Principal{
     grid-column: 1/3;
@@ -160,6 +158,22 @@ tr:hover td{
     background-color: rgb(230, 196, 102);
     color: rgb(171, 84, 31);
     cursor: pointer;
+}
+/* Selector CSS por atributo */
+a[href^="tel:"] {
+    font-size: 15px;
+    display: inline-block;
+    margin: 20px 30px;
+a.btn-second {
+  color: #4CAF50;
+}
+}
+a.btn-second {
+  color: #4CAF50;
+}
+a.btn-second:before {
+  content: "\260e";
+  margin-right: 0.5em;
 }
 /* burbujas */
 @keyframes flotar {
