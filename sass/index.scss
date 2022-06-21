@@ -1,0 +1,12 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Papyrus', cursive;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: repeating-linear-gradient(90deg, rgb(202, 118, 118), rgb(186, 221, 32) 20px, #9c9797 20px);
+}
+/*layout en grid + box moddeling*/
