@@ -1,3 +1,40 @@
+@charset "UTF-8";
+/*MISC*/
+/*PARTIALS*/
+.header {
+  grid-area: header;
+  grid-row: 1/2;
+  background-image: url(./fondo.JPG);
+  padding: 1rem;
+  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+  display: flex;
+  flex-flow: row wrap;
+  transform: translate(-3em); }
+
+.lis .B2 {
+  height: 1.7em;
+  cursor: pointer; }
+
+.footer {
+  grid-column: 1/3;
+  background-image: linear-gradient(to right, #6e6e75, #a34b48, #7c7575); }
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  transform: translate(-3em); }
+
+.logo {
+  transition: width 2s, height 2s, transform 2s; }
+
+:hover {
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d; }
+
+/*VIEWS*/
 * {
   margin: 0;
   padding: 0;
@@ -10,3 +47,280 @@ body {
   background-image: repeating-linear-gradient(90deg, #ca7676, #badd20 20px, #9c9797 20px); }
 
 /*layout en grid + box moddeling*/
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 0.5fr;
+  grid-template-areas: 'header header' 'servicios intro' 'articulo articulo' 'footer footer';
+  border: 2px solid black;
+  gap: 1em;
+  justify-content: center;
+  padding: 1em;
+  margin: auto; }
+
+.contenedor, .header, .servicios, .intro, .galeria, .Principal, .tabla, .order, .contact, .footer {
+  width: 90%;
+  max-width: 64rem;
+  margin-left: auto;
+  padding: 1em;
+  justify-content: center;
+  border-style: ridge;
+  text-align: left; }
+
+.header {
+  grid-area: header;
+  grid-row: 1/2;
+  background-image: url(./fondo.JPG);
+  opacity: 0.8;
+  padding: 20px;
+  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2); }
+
+.header .lis .B2 {
+  height: 1.7em;
+  cursor: pointer; }
+
+.servicios {
+  grid-column: 1/2; }
+
+.intro {
+  grid-column: 2/3; }
+
+.Principal {
+  grid-column: 1/3; }
+
+.galeria {
+  grid-column: 1/3; }
+
+.tabla {
+  grid-column: 1/3; }
+
+.order {
+  grid-column: 1/3; }
+
+.contact {
+  grid-column: 1/3; }
+
+.footer {
+  grid-column: 1/3;
+  background-image: linear-gradient(to right, #6e6e75, #a34b48, #7c7575); }
+
+/*alinear cada componente usando FlexboX + box moddeling*/
+.nombre, .list {
+  color: black; }
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  transform: translate(-3em); }
+
+.servicios {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  flex-grow: 3; }
+
+.intro {
+  display: flex;
+  flex-grow: 1;
+  text-align: left; }
+
+.galeria {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-content: space-between;
+  overflow: hidden;
+  width: 90%;
+  transform: translate(-3em); }
+
+.galeria, .a1, img {
+  display: inline-block;
+  height: 85px;
+  padding: 0.2em; }
+
+.a1, img:hover {
+  filter: blur(0.5px);
+  transform: scale(1.2);
+  transition: all 0.3s;
+  padding: 0.2em; }
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  transform: translate(-3em); }
+
+.logo {
+  transition: width 2s, height 2s, transform 2s; }
+
+.logo:hover {
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d; }
+
+.Principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url(./vgde.jpg);
+  opacity: 0.8;
+  transform: translate(-3em); }
+
+.somos, .mamu {
+  width: 45%;
+  padding: 1em;
+  border-style: groove; }
+
+.mamu {
+  height: 120px; }
+
+thead, tbody {
+  width: 90%; }
+
+th, td {
+  border: solid 5px black;
+  padding: 1em;
+  text-align: center;
+  justify-content: center;
+  width: 90%; }
+
+tr:nth-child(even) {
+  background-color: darkgrey; }
+
+/* selecciona cualquier elemento <th> cuando está "mantenido(hovered)"*/
+tr:hover td {
+  background-color: #e6c466;
+  color: #ab541f;
+  cursor: pointer; }
+
+/* Selector CSS por atributo */
+a[href^="tel:"] {
+  font-size: 15px;
+  display: inline-block;
+  margin: 20px 30px; }
+  a[href^="tel:"] a.btn-second {
+    color: #4CAF50; }
+
+a.btn-second {
+  color: #4CAF50; }
+
+a.btn-second:before {
+  content: "\260e";
+  margin-right: 0.5em; }
+
+/* burbujas */
+@keyframes flotar {
+  to {
+    margin-top: 15vh; } }
+
+.burbujas div {
+  background: blue;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  animation: animarburbujas 4s linear infinite; }
+
+.burbujas div:nth-child(1) {
+  width: 50px;
+  height: 45px;
+  left: 40px;
+  animation-duration: 4s; }
+
+.burbujas div:nth-child(2) {
+  width: 60px;
+  height: 55px;
+  left: 25%;
+  animation-duration: 8s; }
+
+.burbujas div:nth-child(3) {
+  width: 30px;
+  height: 27px;
+  left: 40%;
+  animation-duration: 5s; }
+
+.burbujas div:nth-child(4) {
+  width: 65px;
+  height: 60px;
+  left: 50%;
+  animation-duration: 10s; }
+
+.burbujas div:nth-child(5) {
+  width: 55px;
+  height: 50px;
+  left: 65%;
+  animation-duration: 6.5s; }
+
+.burbujas div:nth-child(6) {
+  width: 50px;
+  height: 48px;
+  left: 85%;
+  animation-duration: 9s; }
+
+.burbujas div:nth-child(7) {
+  width: 35px;
+  height: 32px;
+  left: 90%;
+  animation-duration: 6s; }
+
+@keyframes animarburbujas {
+  0% {
+    width: 0;
+    height: 0; }
+  3% {
+    width: 30px;
+    height: 27px; }
+  50% {
+    margin-left: 20px;
+    opacity: 0.5; }
+  100% {
+    transform: rotate(90deg);
+    bottom: 100vh;
+    background: #1b8fc5; } }
+
+.order {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translate(-2em); }
+
+.pedir, .registro {
+  width: 80%;
+  text-align: center;
+  justify-items: center;
+  padding: 1 em;
+  border: 2px black;
+  background-image: linear-gradient(#3a3a70, #dd9818); }
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translate(1em); }
+
+/*responsive*/
+/*para tables*/
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  body {
+    background-image: repeating-linear-gradient(90deg, #858282, #42b116 20px, #1a1818 20px, #e67979 40px);
+    padding-top: 3.2em;
+    flex-direction: column; }
+  .articulo, .a1, img {
+    width: 90%; } }
+
+/*para portatil*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  body {
+    background-image: repeating-linear-gradient(90deg, #858282, #172a4d 20px, #1a1818 20px, #c5d439 40px);
+    padding-top: 3.2em;
+    flex-direction: column; }
+  .articulo, .a1, img {
+    width: 90%; } }
+
+/*para mobil*/
+@media all and (max-width: 320px) {
+  body {
+    background-image: repeating-linear-gradient(90deg, #858282, #a56868 20px, #1a1818 20px, #e67979 40px);
+    padding-top: 1.5em; }
+  .articulo, .a1, img {
+    width: 95%;
+    flex-direction: row; } }

@@ -1,0 +1,14 @@
+$fondo:url(./fondo.JPG);
+.header{
+    grid-area: header;
+    grid-row: 1/2;
+    background-image: $fondo;
+	padding: 1rem;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+    transform: translate(-3em);}
+ .lis .B2 {
+    height: 1.7em;
+    cursor: pointer;
+}
