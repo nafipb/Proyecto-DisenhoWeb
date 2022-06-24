@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 body{
+    margin:0;
+    padding:0;
     font-family:'Papyrus', cursive;
     text-align: center;
     box-sizing: border-box;
@@ -20,14 +22,12 @@ body{
                          'footer footer';
     border: 2px solid black;
     gap: 1em;
-    justify-content: center;
     padding: 1em;
     margin: auto;    
 }   
 .contenedor, .header, .servicios, .intro, .galeria,.Principal, .tabla, .order, .contact, .footer{
     width: 90%;
-    max-width: 64rem;
-    margin-left: auto;
+    margin-left: 1em;
     padding: 1em;
     justify-content: center;
     border-style: ridge;
@@ -37,11 +37,8 @@ body{
     grid-area: header;
     grid-row: 1/2;
     background-image: url(./fondo.JPG);
-    opacity: 0.8;
-	padding: 20px;
-	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
-.header .lis .B2 {
+.header .init .B2 {
     height: 1.7em;
     cursor: pointer;
 }
@@ -103,8 +100,8 @@ body{
 .galeria, .a1, img{
     display: inline-block;
     height: 85px;
-    padding: 0.2em;
-} 
+    padding: 0.2em;} 
+
 .a1, img:hover{
     filter: blur(0.5px);
     transform: scale(1.2);
@@ -117,7 +114,7 @@ body{
     justify-content: space-between;
     align-content: space-between;
     transform: translate(-3em);
-}
+}   
 .logo{
     transition: width 2s, height 2s, transform 2s;
 }

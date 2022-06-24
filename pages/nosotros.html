@@ -4,46 +4,60 @@
 	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="CSS/index.css"/>
 	<title>Proyecto:Diseño Web</title>
 </head>
 <body>
-	<div class="contenedor">
-		<!-- Inicio de logo + nav --> 
-		<header class= "header">
-			<div>
-				<h1 class="titulos"> La sazón de doña Luci</h1>
-				<p class="parrafo" >Restaurante Vallegrandino</p>
+	<div class="container">
+		<div class="row align-items-start p-3">
+			<!-- Inicio de logo + nav --> 
+			<header class="col-12 mt-4 mb-5 mr-2 p-4" style="background-image: url(CSS/fondo.JPG)">
+				<div class="contenedor d-flex">
+					<div class="col-9 text-left">
+						<h1> La sazón de doña Luci</h1>
+						<p >Restaurante Vallegrandino</p>
+					</div>
+					<div class=" col-3 text-right">
+                    	<a href="contacto.html"><button class="B2">Iniciar sección</button></a>
+                    	<a href="con.html"><button class="B2">Registrarse</button></a>
+               	 	</div>
+				</div>
+			</header>
+			<nav class="col-12 mt-2 p-3 b-2">
+				<ul class="nav nav-pills mt-3 btn" >
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="../index.html">INICIO</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li></button>
+					<div class="btn-group">
+						<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						  MENU
+						</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="menu.html">COMIDAS</a></li>
+						  <li><a class="dropdown-item" href="extras.html">ESPECIALES</a></li>
+						</ul>
+					</div>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="envios.html">ENVIOS</a></li></button>
+					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="contacto.html">CONTACTO</a></li></button>
+				</ul>	
+			</nav>
+			<!-- cierre de fila logo + nav -->
+			<!-- inicio de la intro -->
+			<section class="col-9 mt-2 text-start">
+				<article class="donalu">
+                    <h4 class="subtitulos text-start">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h4> 
+                    <p class="parrafo text-start">Somos un restaurante Vallegrandino, ubicado en vallegrande y nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
+                    <hr>	
+                </article>
+				<div class="nav">
+					<a class="nav-link" href="menu.html"><kbd>Veamos el Menu</kbd></a>
+				</div>
+			</section>
+			<div class=" col-3 mt-3 mb-5 p-2">
+				<img src="./CSS/mama.JPG" alt="logo.png" class="rounded-circle img-fluid">
 			</div>
-			<div class=" init">
-				<a href="contacto.html"><button class="B2">Iniciar sección</button></a>
-				<a href="contacto.html"><button class="B2">Registrarse</button></a>
-			</div>
-		</header>
-		<nav class="servicios">
-			<ul>
-				<li><button type="button"><a href="./index.html">INICIO</a></li></button>
-				<li><button type="button"><a href="nosotros.html">NOSOTROS</a></li></button>
-				<li><button type="button"><a href="menu.html">COMIDAS</a></li></button>
-				<li><button type="button"><a href="extras.html">ESPECIALES</a></li></button>
-				<li><button type="button"><a href="envios.html">ENVIOS</a></li></button>
-				<li><button type="button"><a href="contacto.html">CONTACTO</a></li></button>
-			</ul>	
-		</nav>
-		<!-- cierre de fila logo + nav -->
-		<!-- Inicio de intro -->
-		<section class="intro">
-			<article class="donalu">
-				<h4 class="subtitulos">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h4> 
-				<p class="parrafo">Somos un restaurante Vallegrandino, ubicado en vallegrande y nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
-				<hr>	
-			</article>
-			<div class="nav">
-				<a href="pages/menu.html">Veamos el Menu</button></a>
-			</div>
-		</section>
-		<!-- fin de intro -->
-   		<!-- Inicio de la info de pagina --> 
+			<!--fin de la intro -->
+   			<!-- Inicio de la info de pagina --> 
 			<div id="accordion" class="col-12 mt-4 mb-5 p-4 text-start"> 
 				<div class="card">
 					<div class="card-header">
@@ -111,16 +125,20 @@
 			</div>
 			 <!-- Cierre de info de pagina -->
 			<!--inicio de footer-->
-		<footer class="footer">
-			<div>
-				<a href="https://www.facebook.com/profile.php?id=100057362952927" class="parrafo">Estamos en Facebook</a>
-				<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
-			</div>
-			<div class="logo">
-				<img src="./IMAGENES/logo.png" alt="logo.png" class="logo">
-			</div>
-		</footer>
-		<!--fin de footer-->
+			<footer class="col-12 mt-4 mb-5 mr-2 p-4", style="background-image: linear-gradient(to right, rgb(110, 110, 117), rgb(163, 75, 72), rgb(124, 117, 117))">
+				<div class="container d-flex">
+					<div class="col-7">
+						<a href="https://www.facebook.com/profile.php?id=100057362952927" class="parrafo">Estamos en Facebook</a>
+						<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
+					</div>
+					<div class="col-5">
+						<img src="../IMAGENES/logo.png" alt="logo.png" class="logo">
+					</div>
+				</div>
+			</footer>	
+			<!--fin de footer-->
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	</div>
 </body>
 </html>
