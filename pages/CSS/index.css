@@ -2,7 +2,8 @@
     /*colors*/
     --primary:rgb(233, 202, 202);
     --secondary:rgb(128, 172, 180);
-    --alternative: rgb(190, 179, 75);
+    --parrafo:rgb(24, 24, 43);
+    --alternative: rgb(3, 22, 41);
     --text-color:rgb(10, 10, 10);
     --icono-fon:red;
     --tabla-insite:rgb(230, 196, 102);
@@ -133,14 +134,33 @@ a, th, td {
 }
 .cards{
     display: flex;
-    flex-direction: row;
+    flex-wrap: rowwrap;
     gap: 1rem;
     justify-content: center;
 }
 .box{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--spacing-xmall);
+    flex: 1 1 clamp(100px,30%,400px)
+}
+.box__info {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-medium);
+}
+.box__title{
+    font-family: var(--parrafo);
+    color: var(--alternative);
+}
+.box__subtitle{
+    font-family: var(--secondary);
+    color:var(--text-color);
+    font-size: var(--text-medium);
+}
+.box__text{
+    color: var(--text-color);
+    font-size: var(--text-small);
 }
 img:hover{
     filter: blur(0.5px);
