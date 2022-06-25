@@ -1,15 +1,56 @@
+:root{
+    /*colors*/
+    --primary:rgb(233, 202, 202);
+    --secondary:rgb(128, 172, 180);
+    --alternative: rgb(190, 179, 75);
+    --text-color:rgb(10, 10, 10);
+    --icono-fon:red;
+    --tabla-insite:rgb(230, 196, 102);
+    --tabla-outsite:darkgrey;
+    /*spacings*/
+    --spacing-large:6rem;
+    --spacing-medium:2.4rem;
+    --spacing-small:2rem;
+    --spacing-xmall:1rem;
+    /*Font-famly*/
+    --font-principal:'Papyrus', cursive;
+    --font-secondary:'Papyrus',serif;
+    /*Font-size*/
+    --text-large:4rem;
+    --text-medium:2rem;
+    --text-small:1.4rem;
+    --text-base:1.5rem;
+}
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     margin:0;
     padding:0;
-    font-family:'Papyrus', cursive;
+    font-family: var(--font-principal);
     text-align: center;
     box-sizing: border-box;
-    background-image: repeating-linear-gradient(90deg, rgb(233, 202, 202), rgb(128, 172, 180) 20px);
+    background-image: repeating-linear-gradient(90deg,var(--primary), var(--secondary)20px);
+}
+h1{
+    font-size: var(--text-large);
+}
+h2, option{
+    font-size: var(--text-medium);
+}
+h5, label{
+    font-size: var(--text-base);
+}
+p{
+    font-size: var(--text-small);
+}
+a, th, td {
+    font-size: var(--text-small);
 }
 /*layout en grid + box moddeling*/
 .contenedor{
@@ -30,7 +71,6 @@ body{
     margin-left: 1em;
     padding: 1em;
     justify-content: center;
-    border-style: ridge;
     text-align: left;
 }
 .header{
@@ -68,9 +108,6 @@ body{
     background-image: linear-gradient(to right, rgb(110, 110, 117), rgb(163, 75, 72), rgb(124, 117, 117));  
 }
 /*alinear cada componente usando FlexboX + box moddeling*/
-.nombre, .list{
-    color: black;
-}
 .header{
     display: flex;
     flex-flow: row wrap;
@@ -86,27 +123,31 @@ body{
 .intro{
     display: flex;
     flex-grow: 1;
-    text-align: left;
 }
+/*Galeria*/
 .galeria{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-    align-content: space-between;
-    overflow: hidden;
-    width:90% ;
-    transform: translate(-3em);
+   padding: 1rem;
+   margin: 0 auto;
+   width:90% ;
+   transform: translate(-1em);
 }
-.galeria, .a1, img{
-    display: inline-block;
-    height: 85px;
-    padding: 0.2em;} 
-
-.a1, img:hover{
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+img:hover{
     filter: blur(0.5px);
     transform: scale(1.2);
     transition: all 0.3s;  
     padding: 0.2em;
+    cursor: pointer;
 } 
 .footer{
     display:flex;
@@ -116,20 +157,20 @@ body{
     transform: translate(-3em);
 }   
 .logo{
-    transition: width 2s, height 2s, transform 2s;
+    transition: width 2s, transform 2s;
 }
 .logo:hover {
-     width: 150px;
-    height: 150px;
-    transform-style: preserve-3d;
+    transform: scale(1.1);
+    transition: all 0.3s;  
+    padding: 0.2em;
+    cursor: pointer;
 }
 .Principal{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url(./vgde.jpg);
-    opacity: 0.8;
     transform: translate(-3em);
+    color:var(--secondary)
 }
 .somos, .mamu{
     width:45%;
@@ -143,19 +184,19 @@ thead, tbody{
     width: 90%;
 }
 th,td{
-    border:solid 5px black; 
+    border:solid 2px black; 
     padding: 1em;
     text-align: center;
     justify-content: center;
     width:90%;
 }
 tr:nth-child(even){
-    background-color: darkgrey;
+    background-color:var(--tabla-outsite);
 }
 /* selecciona cualquier elemento <th> cuando está "mantenido(hovered)"*/
 tr:hover td{
-    background-color: rgb(230, 196, 102);
-    color: rgb(171, 84, 31);
+    background-color:var(--tabla-insite);
+    color: rgb(15, 143, 26);
     cursor: pointer;
 }
 /* Selector CSS por atributo */
@@ -168,7 +209,7 @@ a.btn-second {
 }
 }
 a.btn-second {
-  color: #4CAF50;
+  color:var(--icono-fon);
 }
 a.btn-second:before {
   content: "\260e";
