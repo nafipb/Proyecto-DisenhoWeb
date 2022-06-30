@@ -27,8 +27,8 @@ $color:(
   sencondary:  #ad410e
 );
 $estilos: (
-  gray: rgb(173, 169, 169),
-  naranja: #f5e37e
+  uno: rgba(122, 100, 66, 0.459),
+  dos: #614b2157,
 );
 @mixin fondo($color){
   @if map-has-key($estilos, $color){

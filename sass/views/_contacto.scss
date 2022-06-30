@@ -1,18 +1,13 @@
 .order{
     transform: translate(2em);
-    border-style: outset;
+    border-style: inset;
+    @include fondo(dos);
+    color: rgb(19, 12, 12);
 }
 .contacto{
     transform: translate(1em);
-    border: 2px gray;
-    @include fondo(gray);
-    color: rgb(151, 12, 12);
-}
-section, .contacto {
+    @include fondo(uno);
+    color: rgb(19, 12, 12);
     text-align: center;
-    padding: 2rem;
-    margin: .5rem;
-  }
-  .formulario{
     border-style: inset;
   }

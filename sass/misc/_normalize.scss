@@ -9,7 +9,7 @@ html{
 }
 body{
     font-family:$font-principal;
-    background-image: repeating-linear-gradient(90deg,$primary, $secondary 20px);
+    background-image: repeating-linear-gradient(90deg, rgb(133, 130, 130), rgb(192, 185, 83) 20px, #bebcbc 20px, #16e5ec 40px);
 }
 h1{
     font-size:$text-large;
@@ -36,7 +36,7 @@ p{
     font-size:$text-small;
 }
 a, th, td {
-    font-size:$text-small;
+    font-size:$text-xsmall;
 }
 img {
     cursor: pointer;

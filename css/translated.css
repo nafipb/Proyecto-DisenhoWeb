@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: "Papyrus", cursive;
-  background-image: repeating-linear-gradient(90deg, #e9caca, #80acb4 20px); }
+  background-image: repeating-linear-gradient(90deg, #858282, #c0b953 20px, #bebcbc 20px, #16e5ec 40px); }
 
 h1 {
   font-size: 4.5rem;
@@ -57,7 +57,7 @@ p {
   font-size: 2rem; }
 
 a, th, td {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 img {
   cursor: pointer;
@@ -87,6 +87,10 @@ img:hover {
     background-color: #b0b5bb; }
   .Btn .b_registro, .b_inicio .b_registro, .b_registro .b_registro {
     background-color: #d3d19c; }
+
+.intro {
+  transform: translate(5.5em);
+  padding: 1rem; }
 
 /*Inicio de mi footer*/
 .footer {
@@ -123,7 +127,7 @@ img:hover {
   grid-area: galeria;
   grid-column: 1/2;
   width: 90%;
-  transform: translate(2em); }
+  transform: translate(5em); }
 
 .Principal {
   justify-content: space-between;
@@ -150,20 +154,15 @@ a.btn-second:before {
 
 .order {
   transform: translate(2em);
-  border-style: outset; }
+  border-style: inset;
+  background-color: #614b2157;
+  color: #130c0c; }
 
 .contacto {
   transform: translate(1em);
-  border: 2px gray;
-  background-color: #ada9a9;
-  color: #970c0c; }
-
-section, .contacto {
+  background-color: rgba(122, 100, 66, 0.459);
+  color: #130c0c;
   text-align: center;
-  padding: 2rem;
-  margin: .5rem; }
-
-.formulario {
   border-style: inset; }
 
 thead, tbody {
