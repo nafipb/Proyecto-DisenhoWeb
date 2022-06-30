@@ -1,0 +1,37 @@
+/*aplicando mixing*/
+@mixin transformar($propiedad) {
+    -webkit-transform: $propiedad;
+    -ms-transform: $propiedad;
+    transform: $propiedad;
+  }
+@mixin important-text {
+    color:$parrafo;
+    font-size: $text-medium;
+    font-weight: lighter;
+    border: 1px solid rgb(88, 86, 86);
+    padding: 1em;
+    margin: 1em;
+    transform: translate(2em);
+}
+/* aplicando extend para los botones */
+%btn {
+  width: 90%;
+  padding: 2px 0;
+  margin: 2px auto;
+  border-radius: 2px;
+  color: #18191a;
+}
+/*aplicando maps */
+$color:(
+  primary:rgb(22, 22, 80),
+  sencondary:  #ad410e
+);
+$estilos: (
+  gray: rgb(173, 169, 169),
+  naranja: #f5e37e
+);
+@mixin fondo($color){
+  @if map-has-key($estilos, $color){
+    background-color: map-get($estilos, $color);
+  } 
+}

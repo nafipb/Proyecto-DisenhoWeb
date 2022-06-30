@@ -5,26 +5,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<link rel="stylesheet" href="CSS/index.css"/>
+	<link rel="stylesheet" href="../css/translated.css"/>
 	<title>Proyecto:Diseño Web</title>
 </head>
 <body>
 	<div class="container">
-		<div class="row align-items-start p-3">
+		<div class="row align-items-start">
 			<!-- Inicio de logo + nav --> 
-			<header class="col-12 mt-4 mb-5 mr-2 p-4" style="background-image: url(CSS/fondo.JPG)">
+			<header class="col-12 header">
 				<div class="contenedor d-flex">
 					<div class="col-9 text-left">
 						<h1> La sazón de doña Luci</h1>
 						<h2 >Restaurante Vallegrandino</h2>
 					</div>
-					<div class=" col-3 text-right">
-                    	<a href="contacto.html"><button class="B2">Iniciar sección</button></a>
-                    	<a href="con.html"><button class="B2">Registrarse</button></a>
+					<div class=" col-3 Btn text-right">
+                    	<a href="contacto.html"><button class="b_inicio">Iniciar sección</button></a>
+                    	<a href="contacto.html"><button class="b_registro">Registrarse</button></a>
                	 	</div>
 				</div>
 			</header>
-			<nav class="col-12 mt-2 p-3 b-2">
+			<nav class="col-12 p-2 m-2 navegacion">
 				<ul class="nav nav-pills mt-3 btn" >
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="../index.html">INICIO</a></li></button>
 					<li class="nav-item"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="nosotros.html">NOSOTROS</a></li></button>
@@ -43,26 +43,26 @@
 			</nav>
 			<!-- cierre de fila logo + nav -->
 			<!-- inicio de la intro -->
-			<section class="col-9 mt-2 text-start">
+			<section class="col-9 p-2 m-2 text-start">
 				<article class="donalu">
-                    <h2 class="subtitulos text-start">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h2> 
-                    <p class="parrafo text-start">Somos un restaurante Vallegrandino, ubicado en vallegrande y nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
+                    <h2 class="text-start">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h2> 
+                    <p class="text-start">Somos un restaurante Vallegrandino, ubicado en vallegrande y nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
                     <hr>	
                 </article>
 				<div class="nav">
 					<a class="nav-link" href="menu.html"><kbd>Veamos el Menu</kbd></a>
 				</div>
 			</section>
-			<div class=" col-3 mt-3 mb-5 p-2">
-				<img src="./CSS/mama.JPG" alt="mami.png" class="rounded-circle img-fluid">
+			<div class=" col-3 p-2 m-2">
+				<img src="../IMAGENES/mama.JPG" alt="mami.png" class="rounded-circle img-fluid">
 			</div>
 			<!--fin de la intro -->
    			<!-- Inicio de la info de pagina --> 
-			<div id="accordion" class="col-12 mt-4 mb-5 p-4 text-start"> 
+			<div id="accordion" class="col-12 p-2 m-2 text-start"> 
 				<div class="card">
 					<div class="card-header">
 						<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-							<h2>¿Quienes somos?</h2>
+							<h4 class="question">¿Quienes somos?</h4>
 						</a>
 					</div>
 					<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
@@ -79,7 +79,7 @@
 			  	<div class="card ">
 					<div class="card-header">
 						<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-							<h2>¿Donde nos encontramos?</h2>
+							<h4>¿Donde nos encontramos?</h4>
 						</a>
 					</div>
 					<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
@@ -97,15 +97,15 @@
 				<div class="card ">
 					<div class="card-header">
 						<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-							<h2>Atendemos</h2>
+							<h4>Atendemos</h4>
 						</a>
 					</div>
 					<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
 						<div class="card-body">
 							<p>
 								Atendemos los fines de semana:
-								<hr>Viernes 10:00 - 18.00</hr>
-								<hr>Sabado 10:00 - 18:00</hr>
+								<p>Viernes 10:00 - 18.00</p>
+								<p>Sabado 10:00 - 18:00</p>
 							</p>
 						</div>
 					</div>
@@ -113,7 +113,7 @@
 			 	<div class="card ">
 					<div class="card-header">
 						<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-							<h2>¿Queres que te enviemos algún pedido al interior del pais?</h2>
+							<h4>¿Queres que te enviemos algún pedido al interior del pais?</h4>
 						</a>
 					</div>
 					<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
@@ -133,19 +133,17 @@
 			</div>
 			 <!-- Cierre de info de pagina -->
 			<!--inicio de footer-->
-			<footer class="col-12 mt-4 mb-5 mr-2 p-4", style="background-image: linear-gradient(to right, rgb(110, 110, 117), rgb(163, 75, 72), rgb(124, 117, 117))">
+			<footer class="col-12 footer">
 				<div class="container d-flex">
 					<div class="col-8 text-start">
 						<a href="https://www.facebook.com/profile.php?id=100057362952927">Estamos en Facebook</a>
-						<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
+						<p>&#174;Derechos reservados para la familia Paniagua</p>
 					</div>
 					<div class="col-4">
 						<img src="../IMAGENES/logo.png" alt="logo.png" class="logo">
 					</div>
 				</div>
 			</footer>
-			<!--fin de footer-->
-			</footer>	
 			<!--fin de footer-->
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

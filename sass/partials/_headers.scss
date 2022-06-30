@@ -1,14 +1,16 @@
 /*Inicio de mi header*/
-$fondo:url(./fondo.JPG);
-
 .header{
-    grid-area: header;
-    grid-row: 1/2;
-    background-image: $fondo;
-    width: 90%;
-    margin-left: 1em;
-    padding: 1em;
-    text-align: left;
-.init .B2 {
- cursor: pointer}
+    @include important-text;
+    background-image:$fondo;
+}  
+.Btn, .b_inicio, .b_registro{
+        cursor: pointer;
+    .b_inicio{
+        @extend %btn;
+        background-color: #b0b5bb;
+     }
+    .b_registro {
+        @extend %btn;
+        background-color: #d3d19c;
+     }
 }

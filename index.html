@@ -3,50 +3,52 @@
 <head>
 	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Este sitio web es del restaurante de doña lucila, icono Vallegrandino, pionera de la culinaria vallegrandina">
+   	<meta name="keywords"  content="COMIDA, PLATOS TIPICOS,VALLEGRANDE, DERIVADOS DEL CERDO, DOÑA LUCILA">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<link rel="stylesheet" href="pages/CSS/index.css"/>
-	<title>Proyecto:Diseño Web</title>
+	<link rel="stylesheet" href="./css/translated.css">
+	<title>Restaurante Vallegrandino_Doña LUCI</title>
 </head>	
 <body>
-	<div class="container">
+	<div class="conteiner">
 		<div class="row align-items-start p-3">
 			<!-- Inicio de logo + nav --> 
-			<header class="col-12 mt-4 mb-5 mr-2 p-4" style="background-image: url(./pages/CSS/fondo.JPG)">
+			<header class="col-12 header">
 				<div class="contenedor d-flex">
-					<div class="col-9 text-left">
+					<div class="col-9">
 						<h1> La sazón de doña Luci</h1>
 						<h2 >Restaurante Vallegrandino</h2>
 					</div>
-					<div class=" col-3 text-right">
-                    	<a href="pages/contacto.html"><button class="B2">Iniciar sección</button></a>
-                    	<a href="pages/contacto.html"><button class="B2">Registrarse</button></a>
-					</div>
+					<div class=" col-3 Btn text-right">
+                    	<a href="contacto.html"><button class="b_inicio">Iniciar sección</button></a>
+                    	<a href="contacto.html"><button class="b_registro">Registrarse</button></a>
+               	 	</div>
 				</div>
 			</header>
-			<nav class="col-6 mt-2 p-3 b-2">
+			<nav class="col-12 p-2 m-2 navegacion">
 				<ul class="nav nav-pills mt-3 btn">
 					<li class="nav-item h6"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="index.html">INICIO</a></li></button>
 					<li class="nav-item h6"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="pages/nosotros.html">NOSOTROS</a></li></button>
 					<div class="btn-group">
-						<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-						  MENU
-						</button>
-						<ul class="dropdown-menu">
-						  <li><a class="dropdown-item" href="pages/menu.html">COMIDAS</a></li>
-						  <li><a class="dropdown-item" href="pages/extras.html">ESPECIALES</a></li>
-						</ul>
-					  </div>
+					<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						MENU
+					</button>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="pages/menu.html">COMIDAS</a></li>
+						<li><a class="dropdown-item" href="pages/extras.html">ESPECIALES</a></li>
+					</ul>
+					</div>
 					<li class="nav-item h6 "><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="pages/envios.html">ENVIOS</a></li></button>
 					<li class="nav-item h6"><button type="button" class="btn btn-outline-warning"><a class="nav-link" href="pages/contacto.html">CONTACTO</a></li></button>
 				</ul>	
 			</nav>
 			<!-- cierre de fila logo + nav -->
 			<!-- Inicio de intro -->
-			<section class="col-6 mt-2 b-2">
+			<section class="col-9 p-2 m-2 intro">
 				<article class="donalu">
-                    <h2 class="subtitulos text-start">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h2> 
-                    <p class="parrafo text-start">Somos un restaurante Vallegrandino, ubicado en vallegrande y nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
+                    <h2 class="text-start">Resturant la sazón de doña Lucila Lino, les da la bienvenida</h2> 
+                    <p class="text-start">Somos un restaurante Vallegrandino, ubicado en vallegrande y nuestro objetivo es mostrar y llevar la culinaria Vallegrandina a cada pedacito de nuestro pais</p>
                     <hr>	
                 </article>
 				<div class="nav">
@@ -55,58 +57,34 @@
 			</section>
 			<!-- fin de intro -->
 			<!--inicio de la galeria-->
-			<main class=" col-12  6 mt-2 b-2 galeria">
-				<section id="cards" class="cards">
-					<article class="box">
-						<picture class="box__img">                    	
-							<img src="IMAGENES/asadito.jpg" alt="asadito.JPG" class="rounded-circle img-fluid">
-						</picture>
-						<div class="box__info">
-							<h2 class="box__title">Asadito Vallegrandino</h2>
-							<hr>
-							<h5 class="box__subtitle">Principal Platillo Vallegrandino</h5>
-							<p class="box__text">Asadito Vallegradino Elaborado con la mas tierna carne de chancho, este platillo 
-								esta acompañado con su papitas, ensalada y mote vallegrandino
-							</p>
-						</div>
-					</article>
-					<article class="box">
-						<picture class="box__img">                    	
-							<img src="IMAGENES/chicharron.jpg" alt="chicharron.JPG" class="rounded-circle img-fluid">
-						</picture>
-						<div class="box__info">
-							<h2 class="box__title">Chicharron Vallegrandino</h2>
-							<hr>
-							<h5 class="box__subtitle">Principal Platillo Vallegrandino</h5>
-							<p class="box__text">Chicharron Vallegradino Elaborado con carne y grasita mas tierna del cerdo, este platillo 
-								esta acompañado con su papitas, ensalada y mote vallegrandino
-							</p>
-						</div>
-					</article>
-					<article class="box">
-						<picture class="box__img">                    	
-							<img src="IMAGENES/escabeche.jpg" alt="escabeche.JPG" class="rounded-circle img-fluid">
-						</picture>
-						<div class="box__info">
-							<h2 class="box__title">Escabeche Vallegrandino</h2>
-							<hr>
-							<h5 class="box__subtitle">Principal Platillo Vallegrandino</h5>
-							<p class="box__text">Escabeche Vallegradino Elaborado con el cuerillo mas tierno del cerdo, este platillo 
-								esta acompañado con su ensalada y mote vallegrandino
-							</p>
-						</div>
-					</article>
-				</section>			
-			</main>
+			<section class="col-12 p-2 m-2 galeria">
+				<div class="contenedor d-flex">
+                	<div class="col-3">
+                    	<img src="IMAGENES/asadito.jpg" alt="asadito.JPG" class="rounded-circle img-fluid">
+						<hr>
+						<h3>Asadito vallegrandino</h3>
+                	</div>
+                	<div class="col-3">
+                    	<img src="IMAGENES/chicharron.jpg" alt="chicharron.jpg"class="rounded-circle img-fluid">
+						<hr>
+						<h3>Chicharron Vallegrandino</h3>
+                	</div>
+					<div class="col-3">
+						<img src="IMAGENES/escabeche.jpg" alt="food.JPG"class="rounded-circle img-fluid">
+						<hr>
+						<h3>Escabeche Vallegrandino</h3>
+					</div>
+				</div>	
+			</section>
 			<!-- fin de la galeria -->
 			<!--inicio de footer-->
-			<footer class="col-12 mt-4 mb-5 mr-2 p-4", style="background-image: linear-gradient(to right, rgb(110, 110, 117), rgb(163, 75, 72), rgb(124, 117, 117))">
+			<footer class="col-12 footer">
 				<div class="container d-flex">
-					<div class="col-8 text-start">
-						<a href="https://www.facebook.com/profile.php?id=100057362952927">Estamos en Facebook</a>
-						<p class="derechos">&#174;Derechos reservados para la familia Paniagua</p>
+					<div class="col-7">
+						<a href="https://www.facebook.com/profile.php?id=100057362952927" class="parrafo">Estamos en Facebook</a>
+						<p>&#174;Derechos reservados para la familia Paniagua</p>
 					</div>
-					<div class="col-4">
+					<div class="col-5">
 						<img src="./IMAGENES/logo.png" alt="logo.png" class="logo">
 					</div>
 				</div>

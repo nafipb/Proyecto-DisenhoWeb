@@ -1,0 +1,18 @@
+.order{
+    transform: translate(2em);
+    border-style: outset;
+}
+.contacto{
+    transform: translate(1em);
+    border: 2px gray;
+    @include fondo(gray);
+    color: rgb(151, 12, 12);
+}
+section, .contacto {
+    text-align: center;
+    padding: 2rem;
+    margin: .5rem;
+  }
+  .formulario{
+    border-style: inset;
+  }

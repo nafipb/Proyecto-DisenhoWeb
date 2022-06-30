@@ -1,0 +1,50 @@
+/*Normalize*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family:$font-principal;
+    background-image: repeating-linear-gradient(90deg,$primary, $secondary 20px);
+}
+h1{
+    font-size:$text-large;
+    color: rgb(212, 36, 74);
+    @include transformar(rotate(0.20deg))
+}
+h2, option{
+    font-size:$text-medium;
+}
+h3{
+    font-size: $text-medium;
+    color: rgb(34, 28, 128);
+    @include transformar(rotate(20deg))
+}
+h4{
+    font-size: $text-medium;
+    color: map-get($color, sencondary);
+    background-color: rgb(162, 170, 170);
+}
+h5, label{
+    font-size:$text-base;
+}
+p{
+    font-size:$text-small;
+}
+a, th, td {
+    font-size:$text-small;
+}
+img {
+    cursor: pointer;
+    height: 50px;
+} 
+img:hover{
+    filter: blur(0.5px);
+    transform: scale(1.2);
+        transition: all 0.3s;  
+    padding: 0.2em;
+} 

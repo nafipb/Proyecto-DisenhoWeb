@@ -1,0 +1,24 @@
+.Principal{
+    justify-content: space-between;
+    background-color: $primary;
+    transform: translate(-3em);
+}
+.card-header{
+    color: map-get($color, primary);
+}
+/* Selector CSS por atributo */
+a[href^="tel:"] {
+    font-size: 15px;
+    display: inline-block;
+    margin: 20px 30px;
+a.btn-second {
+  color: #4CAF50;
+}
+}
+a.btn-second {
+  color: #4CAF50;
+}
+a.btn-second:before {
+  content: "\260e";
+  margin-right: 0.5em;
+}
