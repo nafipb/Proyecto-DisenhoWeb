@@ -1,15 +1,7 @@
 
-.contenedor, .header, .servicios, .intro, .galeria,.Principal, .tabla, .order, .contact, .footer{
-  width: 90%;
-  margin-left: 1em;
-  padding: 1em;
-  justify-content: center;
-  text-align: left;
-}
 /*Inicio de mi galeria*/
 .galeria{
-  grid-area: galeria;
-  grid-column: 1/2;
   width:90% ;
-  transform: translate(5em);
+  height: 80%;
+  transform: translate(15em);
 } 

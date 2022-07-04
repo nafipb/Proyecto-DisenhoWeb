@@ -2,33 +2,62 @@
 /*para tables*/
 @media screen and (min-width:320px) and (max-width:768px){
     body{
-        background-image: repeating-linear-gradient(90deg, rgb(133, 130, 130), rgb(66, 177, 22) 20px, #1a1818 20px, #e67979 40px);
+        background-image: repeating-linear-gradient(90deg, rgb(133, 130, 130), rgb(221, 162, 73) 20px, #7a7676 20px, #70490e71 40px);
         padding-top: 3.2em;
         flex-direction: column;
+        .header,.footer{
+            transform: translate(0em);
+        }
+        .intro, .galeria {
+            transform: translate(8em);
+        }
+        .order, .contacto{
+            transform: translate(2em);
+            width: 90%;
+        }
     }
-    .articulo, .a1, img{
-        width: 90%;
-    }  
 }
 /*para portatil*/
 @media screen and (min-width:768px) and (max-width:1200px){
     body{
         background-image: repeating-linear-gradient(90deg, rgb(133, 130, 130), rgb(23, 42, 77) 20px, #1a1818 20px, #c5d439 40px);
         padding-top: 3.2em;
-        flex-direction: column;
+        .header,.footer{
+            transform: translate(0em);
+        }
+        .galeria{
+            transform: translate(8em);
+        }
+        .order{
+            transform: translate(4em);
+            width: 80%;
+        }
+        .contacto{
+            width: 90%;
+        }
     }
-    .articulo, .a1, img{
-        width: 90%;
-    }   
 }
 /*para mobil*/
 @media all and (max-width:320px){
     body{
-        background-image: repeating-linear-gradient(90deg, rgb(133, 130, 130), rgb(165, 104, 104) 20px, #1a1818 20px, #e67979 40px);
+        background-image: repeating-linear-gradient(90deg, rgb(133, 130, 130), rgb(247, 172, 11) 20px, #1a1818 20px, #e67979 40px);
         padding-top: 1.5em;
+        .header,.footer{
+            transform: translate(-0.5em);
+        }
+        .intro {
+            transform: translate(1.5em);
+        }
+        .galeria{
+            transform: translate(2em);
+        }
+        .order{
+            transform: translate(2em);
+            width: 80%;
+        }
+        .contacto{
+            transform: translate(0.5em);
+            width: 90%;
+        }
     }
-    .articulo, .a1, img{
-        width: 95%;
-        flex-direction: row;
-    }   
 }

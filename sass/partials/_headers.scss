@@ -2,20 +2,9 @@
 .header{
     @include important-text;
     background-image:$fondo;
+    transform: translate(1em);
 }  
-.Btn, .b_inicio, .b_registro{
-        cursor: pointer;
-    .b_inicio{
-        @extend %btn;
-        background-color: #b0b5bb;
-     }
-    .b_registro {
-        @extend %btn;
-        background-color: #d3d19c;
-     }
-    }
+/*inicio de la intro*/
 .intro{
     transform: translate(5.5em); 
-    padding: 1rem;
-}
-
+    }

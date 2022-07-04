@@ -3,6 +3,7 @@
     @include important-text;
     background-image:$color-footer;
     color: map-get($color, primary);
+    transform: translate(1em);
 }
 .logo{
     transition: width 2s, transform 2s;    
@@ -12,5 +13,5 @@
     transition: all 0.3s;  
     padding: 0.2em;
     cursor: pointer;
-    height: 70%;
+    height: 50%;
 }  

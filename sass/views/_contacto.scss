@@ -1,8 +1,7 @@
 .order{
-    transform: translate(2em);
     border-style: inset;
     @include fondo(dos);
-    color: rgb(19, 12, 12);
+    transform: translate(15em);
 }
 .contacto{
     transform: translate(1em);

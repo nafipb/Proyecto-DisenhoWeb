@@ -22,3 +22,9 @@ a.btn-second:before {
   content: "\260e";
   margin-right: 0.5em;
 }
+.slide{
+  margin-top: 0.5em;
+  .slide .img-fluid{
+    width: 50%;
+  }
+}

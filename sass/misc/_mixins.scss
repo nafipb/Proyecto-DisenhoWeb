@@ -5,14 +5,15 @@
     transform: $propiedad;
   }
 @mixin important-text {
-    color:$parrafo;
+    color:$black;
     font-size: $text-medium;
     font-weight: lighter;
     border: 1px solid rgb(88, 86, 86);
     padding: 1em;
     margin: 1em;
-    transform: translate(2em);
+    width: 90%;
 }
+
 /* aplicando extend para los botones */
 %btn {
   width: 90%;
@@ -20,15 +21,25 @@
   margin: 2px auto;
   border-radius: 2px;
   color: #18191a;
+  cursor: pointer;
 }
+.b_inicio{
+  @extend %btn;
+  background-color: #b0b5bb;
+}
+.b_registro {
+   @extend %btn;
+   background-color: #d3d19c;
+}
+
 /*aplicando maps */
 $color:(
   primary:rgb(22, 22, 80),
   sencondary:  #ad410e
 );
 $estilos: (
-  uno: rgba(122, 100, 66, 0.459),
-  dos: #614b2157,
+  uno: rgba(16, 16, 39, 0.089),
+  dos: #17163057,
 );
 @mixin fondo($color){
   @if map-has-key($estilos, $color){
