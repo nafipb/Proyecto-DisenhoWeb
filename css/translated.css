@@ -154,12 +154,12 @@ a.btn-second:before {
 
 .order {
   border-style: inset;
-  background-color: #17163057;
+  background-color: #05050a57;
   transform: translate(15em); }
 
 .contacto {
   transform: translate(1em);
-  background-color: rgba(16, 16, 39, 0.089);
+  background-color: #02021d57;
   color: #130c0c;
   text-align: center;
   border-style: inset; }
