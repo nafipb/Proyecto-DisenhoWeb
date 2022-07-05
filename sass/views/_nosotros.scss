@@ -29,19 +29,24 @@ a.btn-second:before {
   }
 }
 .fab {
-  padding: 20px;
   font-size: $text-small;
-  width: 30px;
+  width: 2em;
   height: 1em;
+  padding: 1em;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  }
-  .fab:hover {
-  opacity: 0.7;
-  } 
-  .fa-whatsapp {
-  background: #11cf86;
-  color: rgba(17, 105, 9, 0.274);
+}
+.fab:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;  
+  padding: 0.2em;
+  height: 40%;
+  width: auto;
+ } 
+    
+.fa-whatsapp {
+  background: rgb(235, 241, 146);
+  color: rgba(40, 78, 36, 0.274);
   }
