@@ -15,7 +15,7 @@
     $spacing-xmall:1rem;
     /*Font-famly*/
     $font-principal:'Papyrus', cursive;
-    $font-secondary:'lucida';
+    $font-secondary:'Indie Flower', cursive;
     /*Font-size*/
     $text-large:4.5rem;
     $text-medium:2.5rem;
@@ -24,4 +24,5 @@
     $text-xsmall:1.5rem;
 /*fondo*/
 $fondo:url(../IMAGENES/fondo.JPG);
-$color-footer:linear-gradient(to right, rgb(110, 110, 117), rgb(163, 75, 72), rgb(124, 117, 117)); 
+$color-footer:linear-gradient(to right, rgb(110, 110, 117), rgb(163, 75, 72), rgb(124, 117, 117));
+$color-body:linear-gradient(to right, rgb(53, 67, 80), rgb(226, 229, 241), rgb(50, 48, 73)) 

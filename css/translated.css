@@ -33,7 +33,7 @@ html {
 
 body {
   font-family: "Papyrus", cursive;
-  background-image: repeating-linear-gradient(90deg, #c75551, rgba(119, 115, 114, 0.89) 20px, #cfbc10 40px); }
+  background-image: linear-gradient(to right, #354350, #e2e5f1, #323049); }
 
 h1 {
   font-size: 4.5rem;
@@ -55,7 +55,7 @@ h3 {
 
 h4 {
   font-size: 2.5rem;
-  color: #ad410e;
+  color: #9e3c0e;
   background-color: #a2aaaa; }
 
 h5, label {
@@ -154,12 +154,12 @@ a.btn-second:before {
 
 .order {
   border-style: inset;
-  background-color: #05050a57;
+  background-color: #2d2e1057;
   transform: translate(15em); }
 
 .contacto {
-  transform: translate(1em);
-  background-color: #02021d57;
+  transform: translate(10em);
+  background-color: #a58a1157;
   color: #130c0c;
   text-align: center;
   border-style: inset; }
@@ -281,12 +281,13 @@ tr:hover td {
       transform: translate(4em);
       width: 80%; }
     body .contacto {
+      transform: translate(1em);
       width: 90%; } }
 
 /*para mobil*/
 @media all and (max-width: 320px) {
   body {
-    background-image: repeating-linear-gradient(90deg, #858282, #f7ac0b 20px, #1a1818 20px, #e67979 40px);
+    background-image: repeating-linear-gradient(90deg, #9e9898, #dfb55b 20px, #949090 20px, #c58448 40px);
     padding-top: 1.5em; }
     body .header, body .footer {
       transform: translate(-0.5em); }

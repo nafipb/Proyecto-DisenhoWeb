@@ -9,7 +9,7 @@ html{
 }
 body{
     font-family:$font-principal;
-    background-image: repeating-linear-gradient(90deg, rgb(199, 85, 81), rgba(119, 115, 114, 0.89) 20px, #cfbc10 40px);
+    background-image:$color-body;
 }
 h1{
     font-size:$text-large;

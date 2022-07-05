@@ -38,8 +38,8 @@ $color:(
   sencondary:  #9e3c0e
 );
 $estilos: (
-  uno: #02021d57,
-  dos: #05050a57,
+  uno: #a58a1157,
+  dos: #2d2e1057,
 );
 @mixin fondo($color){
   @if map-has-key($estilos, $color){

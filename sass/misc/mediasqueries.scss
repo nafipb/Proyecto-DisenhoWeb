@@ -29,10 +29,11 @@
             transform: translate(8em);
         }
         .order{
-            transform: translate(4em);
+            transform: translate(4em);   
             width: 80%;
         }
         .contacto{
+            transform: translate(1em);
             width: 90%;
         }
     }
@@ -40,7 +41,7 @@
 /*para mobil*/
 @media all and (max-width:320px){
     body{
-        background-image: repeating-linear-gradient(90deg, rgb(133, 130, 130), rgb(247, 172, 11) 20px, #1a1818 20px, #e67979 40px);
+        background-image: repeating-linear-gradient(90deg, rgb(158, 152, 152), rgb(223, 181, 91) 20px, #949090 20px, #c58448 40px);
         padding-top: 1.5em;
         .header,.footer{
             transform: translate(-0.5em);
