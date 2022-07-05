@@ -114,8 +114,8 @@ img:hover {
   transform: scale(1.1);
   transition: all 0.3s;
   padding: 0.2em;
-  cursor: pointer;
-  height: 50%; }
+  height: 40%;
+  width: auto; }
 
 /*VIEWS*/
 /*Inicio de mi galeria*/
@@ -151,6 +151,23 @@ a.btn-second:before {
   margin-top: 0.5em; }
   .slide .slide .img-fluid {
     width: 50%; }
+
+.fab {
+  padding: 20px;
+  font-size: 2rem;
+  width: 30px;
+  height: 1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fab:hover {
+  opacity: 0.7; }
+
+.fa-whatsapp {
+  background: #11cf86;
+  color: rgba(17, 105, 9, 0.274); }
 
 .order {
   border-style: inset;
