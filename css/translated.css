@@ -55,7 +55,7 @@ h3 {
 
 h4 {
   font-size: 2.5rem;
-  color: #9e3c0e;
+  color: #350e09;
   background-color: #a2aaaa; }
 
 h5, label {
@@ -109,7 +109,7 @@ img:hover {
 
 .logo {
   transition: width 4s, transform 4s;
-  width: 50%;
+  width: 30%;
   height: 3em; }
 
 /*VIEWS*/
@@ -151,7 +151,7 @@ a.btn-second:before {
   font-size: 2rem;
   width: 2em;
   height: 1em;
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -165,7 +165,7 @@ a.btn-second:before {
   width: auto; }
 
 .fa-whatsapp {
-  background: #ebf192;
+  background: rgba(113, 116, 74, 0.486);
   color: rgba(40, 78, 36, 0.274); }
 
 .order {
@@ -316,4 +316,6 @@ tr:hover td {
       width: 80%; }
     body .contacto {
       transform: translate(0.5em);
-      width: 90%; } }
+      width: 90%; }
+    body .logo {
+      width: 70%; } }
