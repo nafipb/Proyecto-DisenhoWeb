@@ -32,12 +32,12 @@
 }
 /*aplicando maps */
 $color:(
-  primary:rgb(113, 113, 189),
+  primary:rgb(42, 43, 63),
   sencondary:#220a0800,
 );
 $estilos: (
-  uno: #5a5a5857,
-  dos: #62635c57,
+  uno: #30302f57,
+  dos: #0a103057,
 );
 @mixin fondo($color){
   @if map-has-key($estilos, $color){
