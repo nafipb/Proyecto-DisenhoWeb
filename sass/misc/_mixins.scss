@@ -13,7 +13,6 @@
     margin: 1em;
     width: 90%;
 }
-
 /* aplicando extend para los botones */
 %btn {
   width: 90%;
@@ -31,15 +30,14 @@
    @extend %btn;
    background-color: #d3d19c;
 }
-
 /*aplicando maps */
 $color:(
-  primary:rgb(22, 22, 80),
-  sencondary:  #350e09
+  primary:rgb(113, 113, 189),
+  sencondary:#220a0800,
 );
 $estilos: (
-  uno: #a58a1157,
-  dos: #2d2e1057,
+  uno: #5a5a5857,
+  dos: #62635c57,
 );
 @mixin fondo($color){
   @if map-has-key($estilos, $color){

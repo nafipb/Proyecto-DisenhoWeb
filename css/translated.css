@@ -33,18 +33,18 @@ html {
 
 body {
   font-family: "Papyrus", cursive;
-  background-image: linear-gradient(to right, #354350, #e2e5f1, #323049); }
+  background-image: linear-gradient(to right, #f8f2be, #eee4e4); }
 
 h1 {
   font-size: 4.5rem;
-  color: #d4244a;
+  color: #242c5f;
   -webkit-transform: rotate(0.2deg);
   -ms-transform: rotate(0.2deg);
   transform: rotate(0.2deg); }
 
 h2, option {
   font-size: 2.5rem;
-  color: rgba(141, 102, 23, 0.767); }
+  color: rgba(226, 63, 13, 0.767); }
 
 h3 {
   font-size: 2.5rem;
@@ -54,15 +54,28 @@ h3 {
   transform: rotate(20deg); }
 
 h4 {
-  font-size: 2.5rem;
-  color: #350e09;
-  background-color: #a2aaaa; }
+  font-size: 2.5rem; }
 
-h5, label {
+label {
   font-size: 2rem; }
+
+h5 {
+  font-size: 2.5rem;
+  text-align: right;
+  color: rgba(226, 63, 13, 0.767);
+  font-family: "Indie Flower", cursive; }
+
+.letra {
+  font-family: "Indie Flower", cursive;
+  text-align: right; }
+
+.der {
+  color: #e6f3f5;
+  font-family: "Indie Flower", cursive; }
 
 p {
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #18182b; }
 
 a, th, td {
   font-size: 1.5rem; }
@@ -103,8 +116,8 @@ img:hover {
   padding: 1em;
   margin: 1em;
   width: 90%;
-  background-image: linear-gradient(to right, #6e6e75, #a34b48, #7c7575);
-  color: #161650;
+  background-image: linear-gradient(to right, #928f8f, #a8a4a4);
+  color: #7171bd;
   transform: translate(1em); }
 
 .logo {
@@ -121,22 +134,17 @@ img:hover {
 
 .Principal {
   justify-content: space-between;
-  background-color: #e9caca;
+  background-color: #242c5f;
   transform: translate(-3em); }
 
 .card-header {
-  color: #161650; }
+  color: #7171bd; }
 
 /* Selector CSS por atributo */
 a[href^="tel:"] {
   font-size: 15px;
   display: inline-block;
   margin: 20px 30px; }
-  a[href^="tel:"] a.btn-second {
-    color: #4CAF50; }
-
-a.btn-second {
-  color: #4CAF50; }
 
 a.btn-second:before {
   content: "\260e";
@@ -145,7 +153,7 @@ a.btn-second:before {
 .slide {
   margin-top: 0.5em; }
   .slide .slide .img-fluid {
-    width: 50%; }
+    width: 40%; }
 
 .fab {
   font-size: 2rem;
@@ -165,17 +173,17 @@ a.btn-second:before {
   width: auto; }
 
 .fa-whatsapp {
-  background: rgba(113, 116, 74, 0.486);
-  color: rgba(40, 78, 36, 0.274); }
+  background: rgba(161, 161, 153, 0.486);
+  color: rgba(48, 49, 48, 0.274); }
 
 .order {
   border-style: inset;
-  background-color: #2d2e1057;
+  background-color: #62635c57;
   transform: translate(15em); }
 
 .contacto {
   transform: translate(10em);
-  background-color: #a58a1157;
+  background-color: #5a5a5857;
   color: #130c0c;
   text-align: center;
   border-style: inset; }
@@ -273,13 +281,13 @@ tr:hover td {
 /*para tables*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
   body {
-    background-image: repeating-linear-gradient(90deg, #858282, #dda249 20px, #7a7676 20px, #70490e71 40px);
+    background-image: linear-gradient(to right, #4b3f2c71, #70490e71);
     padding-top: 3.2em;
     flex-direction: column; }
     body .header, body .footer {
       transform: translate(0em); }
     body .intro, body .galeria {
-      transform: translate(8em); }
+      transform: translate(5em); }
     body .order, body .contacto {
       transform: translate(2em);
       width: 90%; } }
@@ -287,7 +295,6 @@ tr:hover td {
 /*para portatil*/
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   body {
-    background-image: repeating-linear-gradient(90deg, #858282, #172a4d 20px, #1a1818 20px, #c5d439 40px);
     padding-top: 3.2em; }
     body .header, body .footer {
       transform: translate(0em); }
@@ -303,7 +310,7 @@ tr:hover td {
 /*para mobil*/
 @media all and (max-width: 320px) {
   body {
-    background-image: repeating-linear-gradient(90deg, #9e9898, #dfb55b 20px, #949090 20px, #c58448 40px);
+    background-image: linear-gradient(to right, #dad28f, #70490e71);
     padding-top: 1.5em; }
     body .header, body .footer {
       transform: translate(-0.5em); }
@@ -318,4 +325,5 @@ tr:hover td {
       transform: translate(0.5em);
       width: 90%; }
     body .logo {
-      width: 70%; } }
+      width: 70%;
+      height: 70%; } }

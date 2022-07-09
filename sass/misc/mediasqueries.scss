@@ -2,14 +2,14 @@
 /*para tables*/
 @media screen and (min-width:320px) and (max-width:768px){
     body{
-        background-image: repeating-linear-gradient(90deg, rgb(133, 130, 130), rgb(221, 162, 73) 20px, #7a7676 20px, #70490e71 40px);
+        background-image: linear-gradient(to right, #4b3f2c71, #70490e71);
         padding-top: 3.2em;
         flex-direction: column;
         .header,.footer{
             transform: translate(0em);
         }
         .intro, .galeria {
-            transform: translate(8em);
+            transform: translate(5em);
         }
         .order, .contacto{
             transform: translate(2em);
@@ -20,7 +20,6 @@
 /*para portatil*/
 @media screen and (min-width:768px) and (max-width:1200px){
     body{
-        background-image: repeating-linear-gradient(90deg, rgb(133, 130, 130), rgb(23, 42, 77) 20px, #1a1818 20px, #c5d439 40px);
         padding-top: 3.2em;
         .header,.footer{
             transform: translate(0em);
@@ -41,7 +40,7 @@
 /*para mobil*/
 @media all and (max-width:320px){
     body{
-        background-image: repeating-linear-gradient(90deg, rgb(158, 152, 152), rgb(223, 181, 91) 20px, #949090 20px, #c58448 40px);
+        background-image: linear-gradient(to right, rgb(218, 210, 143), #70490e71);
         padding-top: 1.5em;
         .header,.footer{
             transform: translate(-0.5em);
@@ -61,7 +60,8 @@
             width: 90%;
         }
         .logo{
-            width:70%
+            width:70%;
+            height:70%;
         }
     }
 }

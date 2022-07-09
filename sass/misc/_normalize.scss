@@ -13,7 +13,7 @@ body{
 }
 h1{
     font-size:$text-large;
-    color: rgb(212, 36, 74);
+    color:$primary;
     @include transformar(rotate(0.20deg))
 }
 h2, option{
@@ -27,14 +27,29 @@ h3{
 }
 h4{
     font-size: $text-medium;
-    color: map-get($color, sencondary);
-    background-color: rgb(162, 170, 170);
+    color: map-get($color, $secondary);
 }
-h5, label{
+label{
     font-size:$text-base;
+    color:map-get($color, black);
+}
+h5{
+    font-size:$text-medium;
+    text-align: right;
+    color:$alternative;
+    font-family: $font-secondary;
+}
+.letra{
+    font-family: $font-secondary;
+    text-align: right;
+}
+.der{
+    color:$secondary;
+    font-family: $font-secondary;
 }
 p{
     font-size:$text-small;
+    color:$black;
 }
 a, th, td {
     font-size:$text-xsmall;

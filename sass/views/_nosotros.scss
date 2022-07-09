@@ -11,12 +11,6 @@ a[href^="tel:"] {
     font-size: 15px;
     display: inline-block;
     margin: 20px 30px;
-a.btn-second {
-  color: #4CAF50;
-}
-}
-a.btn-second {
-  color: #4CAF50;
 }
 a.btn-second:before {
   content: "\260e";
@@ -25,7 +19,7 @@ a.btn-second:before {
 .slide{
   margin-top: 0.5em;
   .slide .img-fluid{
-    width: 50%;
+  width: 40%;
   }
 }
 .fab {
@@ -44,9 +38,8 @@ a.btn-second:before {
   padding: 0.2em;
   height: 40%;
   width: auto;
- } 
-    
+ }     
 .fa-whatsapp {
-  background: rgba(113, 116, 74, 0.486);
-  color: rgba(40, 78, 36, 0.274);
+  background: rgba(161, 161, 153, 0.486);
+  color: rgba(48, 49, 48, 0.274);
   }
