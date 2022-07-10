@@ -154,7 +154,7 @@ img:hover {
     body .card, body .slide {
       width: 90%;
       transform: translate(1em); }
-    body label, body option {
+    body h2, body label, body option {
       font-size: 1.5rem; } }
 
 /*PARTIALS*/
