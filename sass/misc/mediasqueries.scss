@@ -50,7 +50,7 @@
         background-color: floralwhite;
         padding-top: 1.5em;
         .header,.footer{
-            transform: translate(-1em);
+            transform: translate(-1.5em);
         }
         .navegacion{
             transform:translate(-2em);
@@ -60,15 +60,19 @@
             transform: translate(1em);
             width: 100%;
         }
-        .menu, .carousel, .galeria{
+        .menu,.galeria{
             transform: translate(-2em);
         }   
-        .card,.car-body .slide, .intro{
+        .card,.car-body, .intro{
             width: 90%;
             transform: translate(1.5em);
         }
         .acordion{
+            transform: translate(-4em);
+        }
+        .carousel{
             transform: translate(-2em);
+
         }
         h2, label, option, p{
             font-size:small;
