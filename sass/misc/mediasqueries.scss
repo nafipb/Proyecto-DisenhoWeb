@@ -1,6 +1,6 @@
 /*responsive*/
 /*para tables*/
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:321px) and (max-width:768px){
     body{
         background-color: rgb(231, 226, 216);
         padding-top: 3.2em;
@@ -45,7 +45,7 @@
     }
 }
 /*para mobil*/
-@media all and (max-width:300px){
+@media (min-width:200px) and (max-width:320px){
     body{
         background-color: floralwhite;
         padding-top: 1.5em;
@@ -53,28 +53,31 @@
             transform: translate(-0.5em);
         }
         .navegacion{
-            transform:translate(1em)
-        }
-        .intro {
-            transform: translate(1.5em);
-        }
-        .galeria{
-            transform: translate(2em);
+            transform:translate(-2em);
+            width:90%;
         }
         .order, .contacto{
             transform: translate(-0.5em);
             width: 100%;
-            background-repeat: no-repeat;
         }
-        .menu{
+        .menu, .carousel, .galeria{
             transform: translate(2em);
         }   
-        .card, .slide{
+        .card,.car-body .slide, .intro{
             width: 90%;
-            transform: translate(1em);
+            transform: translate(1.5em);
         }
-        h2, label, option{
-            font-size: $text-xsmall;
+        .acordion{
+            transform: translate(-1em);
+        }
+        h2, label, option, p{
+            font-size:small;
+        }
+        h3, a{
+            font-size: medium;
+        }
+        h1, h4{
+            font-size:x-large;
         }
     }
 }
