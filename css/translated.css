@@ -32,7 +32,7 @@ html {
 
 body {
   font-family: "Papyrus", cursive;
-  background-image: linear-gradient(to right, #f8f2be, #eee4e4); }
+  background-image: linear-gradient(to right, white, #eee4e4); }
 
 h1 {
   font-size: 4.5rem;
@@ -115,7 +115,7 @@ img:hover {
       transform: translate(3em); }
     body .card {
       width: 90%;
-      transform: translate(3em); } }
+      transform: translate(1em); } }
 
 /*para portatil*/
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -143,18 +143,16 @@ img:hover {
       transform: translate(1.5em); }
     body .galeria {
       transform: translate(2em); }
-    body .order {
-      transform: translate(2em);
-      width: 80%; }
-    body .contacto {
-      transform: translate(0.5em);
-      width: 90%; }
+    body .order, body .contacto {
+      transform: translate(0em);
+      width: 100%;
+      background-repeat: no-repeat; }
     body .logo {
-      width: 70%;
-      height: 70%; }
+      width: 80%;
+      height: 80%; }
     body .menu {
       transform: translate(2em); }
-    body .card {
+    body .card, body .slide {
       width: 90%;
       transform: translate(1em); } }
 
@@ -200,11 +198,6 @@ img:hover {
   height: 80%;
   transform: translate(15em); }
 
-.Principal {
-  justify-content: space-between;
-  background-color: #242c5f;
-  transform: translate(-3em); }
-
 .card-header {
   color: #1f2441; }
 
@@ -222,7 +215,9 @@ a.btn-second:before {
   margin-right: 0.5em; }
 
 .slide {
-  margin-top: 0.5em; }
+  margin-top: 0.5em;
+  border-style: ridge;
+  transform: translate(5em); }
   .slide .slide .img-fluid {
     width: 40%; }
 
@@ -250,11 +245,15 @@ a.btn-second:before {
 .order {
   border-style: inset;
   background-color: #0a103057;
+  background-image: url(../IMAGENES/vgde.JPG);
+  background-repeat: no-repeat;
   transform: translate(15em); }
 
 .contacto {
   transform: translate(10em);
   background-color: #30302f57;
+  background-image: url(../IMAGENES/vgde1.jpg);
+  background-repeat: inherit;
   text-align: center;
   border-style: inset; }
 
@@ -265,7 +264,7 @@ a.btn-second:before {
   border-color: black; }
 
 .menu {
-  border-style: outset;
+  border-style: ridge;
   transform: translate(8em); }
 
 /* burbujas */

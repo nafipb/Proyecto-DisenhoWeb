@@ -1,10 +1,5 @@
-.Principal{
-    justify-content: space-between;
-    background-color: $primary;
-    transform: translate(-3em);
-}
 .card-header{
-    color: map-get($color, primary);
+  color: map-get($color, primary);
 }
 /* Selector CSS por atributo */
 a[href^="tel:"] {
@@ -16,11 +11,13 @@ a.btn-second {
   color: #d1230c;
 }
 a.btn-second:before {
-  content: "\260e";
-  margin-right: 0.5em;
+content: "\260e";
+margin-right: 0.5em;
 }
 .slide{
   margin-top: 0.5em;
+  border-style: ridge;
+  transform: translate(5em);
   .slide .img-fluid{
   width: 40%;
   }

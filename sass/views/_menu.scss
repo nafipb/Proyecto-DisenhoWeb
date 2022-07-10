@@ -1,4 +1,3 @@
-
 .card{
   width: 90%;
   height: 90%;
@@ -6,7 +5,7 @@
   border-color: black;
   }
  .menu{
-    border-style: outset;
+    border-style:ridge;
     transform: translate(8em);
   }
 /* burbujas */
@@ -28,7 +27,6 @@
     left: 40px;
     animation-duration: 4s;
   }
-  
   .burbujas div:nth-child(2) {
     width: 60px;
     height: 55px;

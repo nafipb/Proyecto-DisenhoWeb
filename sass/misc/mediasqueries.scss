@@ -20,7 +20,7 @@
         }   
         .card{
             width: 90%;
-            transform: translate(3em);
+            transform: translate(1em);
         }
     }
 }
@@ -58,22 +58,19 @@
         .galeria{
             transform: translate(2em);
         }
-        .order{
-            transform: translate(2em);
-            width: 80%;
-        }
-        .contacto{
-            transform: translate(0.5em);
-            width: 90%;
+        .order, .contacto{
+            transform: translate(0em);
+            width: 100%;
+            background-repeat: no-repeat;
         }
         .logo{
-            width:70%;
-            height:70%;
+            width:80%;
+            height:80%;
         }
         .menu{
             transform: translate(2em);
         }   
-        .card{
+        .card, .slide{
             width: 90%;
             transform: translate(1em);
         }
