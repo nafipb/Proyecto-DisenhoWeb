@@ -63,16 +63,15 @@
             width: 100%;
             background-repeat: no-repeat;
         }
-        .logo{
-            width:80%;
-            height:80%;
-        }
         .menu{
             transform: translate(2em);
         }   
         .card, .slide{
             width: 90%;
             transform: translate(1em);
+        }
+        label, option{
+            font-size: $text-xsmall;
         }
     }
 }

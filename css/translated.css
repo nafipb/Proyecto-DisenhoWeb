@@ -147,14 +147,13 @@ img:hover {
       transform: translate(0em);
       width: 100%;
       background-repeat: no-repeat; }
-    body .logo {
-      width: 80%;
-      height: 80%; }
     body .menu {
       transform: translate(2em); }
     body .card, body .slide {
       width: 90%;
-      transform: translate(1em); } }
+      transform: translate(1em); }
+    body label, body option {
+      font-size: 1.5rem; } }
 
 /*PARTIALS*/
 /*Inicio de mi footer*/
@@ -169,11 +168,6 @@ img:hover {
   background-image: linear-gradient(to right, #928f8f, #a8a4a4);
   color: #1f2441;
   transform: translate(1em); }
-
-.logo {
-  transition: width 4s, transform 4s;
-  width: 30%;
-  height: 3em; }
 
 /*Inicio de mi header*/
 .header {
@@ -253,8 +247,7 @@ a.btn-second:before {
   transform: translate(10em);
   background-color: #30302f57;
   background-image: url(../IMAGENES/vgde1.jpg);
-  background-repeat: inherit;
-  text-align: center;
+  background-repeat: no-repeat;
   border-style: inset; }
 
 .card {
