@@ -143,20 +143,22 @@ img:hover {
     background-color: floralwhite;
     padding-top: 1.5em; }
     body .header, body .footer {
-      transform: translate(-1em); }
+      transform: translate(-1.5em); }
     body .navegacion {
-      transform: translate(-2em);
+      transform: translate(-4em);
       width: 90%; }
     body .order, body .contacto {
       transform: translate(1em);
       width: 100%; }
-    body .menu, body .carousel, body .galeria {
-      transform: translate(-2em); }
-    body .card, body .car-body .slide, body .intro {
+    body .menu, body .galeria {
+      transform: translate(-2.5em); }
+    body .card, body .car-body {
       width: 90%;
       transform: translate(1.5em); }
-    body .acordion {
+    body .acordion, body .intro {
       transform: translate(-2em); }
+    body .carousel {
+      transform: translate(-4em); }
     body h2, body label, body option, body p {
       font-size: small; }
     body h3, body a {
