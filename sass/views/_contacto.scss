@@ -1,14 +1,12 @@
 .order{
     border-style: inset;
     @include fondo(dos);
-    background-image: $vgde;
     background-repeat: no-repeat;
     transform: translate(15em);
 }
 .contacto{
     transform: translate(10em);
     @include fondo(uno);
-    background-image: $valle;
     background-repeat:no-repeat;
     border-style: inset;
   }

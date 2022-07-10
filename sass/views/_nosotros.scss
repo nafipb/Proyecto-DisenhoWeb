@@ -17,10 +17,13 @@ margin-right: 0.5em;
 .slide{
   margin-top: 0.5em;
   border-style: ridge;
-  transform: translate(5em);
+  transform: translate(9em);
   .slide .img-fluid{
   width: 40%;
   }
+}
+.acordion{
+  transform: translate(3em);
 }
 .fab {
   font-size: $text-small;

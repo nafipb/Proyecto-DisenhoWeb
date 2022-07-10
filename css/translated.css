@@ -33,7 +33,7 @@ html {
 
 body {
   font-family: "Papyrus", cursive;
-  background-image: linear-gradient(to right, white, #eee4e4); }
+  background-image: white; }
 
 h1 {
   font-size: 4.5rem;
@@ -88,6 +88,9 @@ p {
 a {
   font-size: 1.5rem; }
 
+.dropdown-item {
+  font-size: xx-small; }
+
 img {
   cursor: pointer;
   height: 3em;
@@ -103,7 +106,7 @@ img:hover {
 /*para tables*/
 @media screen and (min-width: 320px) and (max-width: 768px) {
   body {
-    background-image: linear-gradient(to right, #4b3f2c71, #70490e71);
+    background-color: #e7e2d8;
     padding-top: 3.2em;
     flex-direction: column; }
     body .header, body .footer {
@@ -135,18 +138,20 @@ img:hover {
       width: 90%; } }
 
 /*para mobil*/
-@media all and (max-width: 320px) {
+@media all and (max-width: 300px) {
   body {
-    background-image: linear-gradient(to right, #dad28f, #70490e71);
+    background-color: floralwhite;
     padding-top: 1.5em; }
     body .header, body .footer {
       transform: translate(-0.5em); }
+    body .navegacion {
+      transform: translate(1em); }
     body .intro {
       transform: translate(1.5em); }
     body .galeria {
       transform: translate(2em); }
     body .order, body .contacto {
-      transform: translate(0em);
+      transform: translate(-0.5em);
       width: 100%;
       background-repeat: no-repeat; }
     body .menu {
@@ -187,6 +192,11 @@ img:hover {
 .intro {
   transform: translate(5.5em); }
 
+.navegacion {
+  transform: translate(5.5em); }
+  .navegacion .dropdown-item {
+    font-size: xx-small; }
+
 /*VIEWS*/
 /*Inicio de mi galeria*/
 .galeria {
@@ -213,9 +223,12 @@ a.btn-second:before {
 .slide {
   margin-top: 0.5em;
   border-style: ridge;
-  transform: translate(5em); }
+  transform: translate(9em); }
   .slide .slide .img-fluid {
     width: 40%; }
+
+.acordion {
+  transform: translate(3em); }
 
 .fab {
   font-size: 2rem;
@@ -240,15 +253,13 @@ a.btn-second:before {
 
 .order {
   border-style: inset;
-  background-color: #0a103057;
-  background-image: url(../IMAGENES/vgde.jpg);
+  background-color: #58608a57;
   background-repeat: no-repeat;
   transform: translate(15em); }
 
 .contacto {
   transform: translate(10em);
-  background-color: #30302f57;
-  background-image: url(../IMAGENES/vgde1.jpg);
+  background-color: #7e7e7c57;
   background-repeat: no-repeat;
   border-style: inset; }
 
