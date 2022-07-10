@@ -9,7 +9,6 @@
     transform: translate(10em);
     @include fondo(uno);
     background-image: $valle;
-    background-repeat:inherit;
-    text-align: center;
+    background-repeat:no-repeat;
     border-style: inset;
   }
