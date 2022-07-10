@@ -12,6 +12,9 @@ a[href^="tel:"] {
     display: inline-block;
     margin: 20px 30px;
 }
+a.btn-second {
+  color: #d1230c;
+}
 a.btn-second:before {
   content: "\260e";
   margin-right: 0.5em;
@@ -38,8 +41,8 @@ a.btn-second:before {
   padding: 0.2em;
   height: 40%;
   width: auto;
+  color: blue;
  }     
 .fa-whatsapp {
   background: rgba(161, 161, 153, 0.486);
-  color: rgba(48, 49, 48, 0.274);
   }

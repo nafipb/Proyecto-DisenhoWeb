@@ -2,11 +2,12 @@
 .card{
   width: 90%;
   height: 90%;
+  transform: translate(2em);
+  border-color: black;
   }
  .menu{
     border-style: outset;
     transform: translate(8em);
-
   }
 /* burbujas */
 @keyframes flotar {

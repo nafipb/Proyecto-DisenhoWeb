@@ -47,17 +47,18 @@ h2, option {
 
 h3 {
   font-size: 2.5rem;
-  color: #221c80;
+  color: #242c5f;
   -webkit-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   transform: rotate(20deg); }
 
 h4 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: #1f2441; }
 
 label {
   font-size: 2rem;
-  color: #2a2b3f; }
+  color: #1f2441; }
 
 h5 {
   font-size: 2.5rem;
@@ -123,7 +124,7 @@ img:hover {
   margin: 1em;
   width: 90%;
   background-image: linear-gradient(to right, #928f8f, #a8a4a4);
-  color: #2a2b3f;
+  color: #1f2441;
   transform: translate(1em); }
 
 .logo {
@@ -144,13 +145,16 @@ img:hover {
   transform: translate(-3em); }
 
 .card-header {
-  color: #2a2b3f; }
+  color: #1f2441; }
 
 /* Selector CSS por atributo */
 a[href^="tel:"] {
   font-size: 15px;
   display: inline-block;
   margin: 20px 30px; }
+
+a.btn-second {
+  color: #d1230c; }
 
 a.btn-second:before {
   content: "\260e";
@@ -176,11 +180,11 @@ a.btn-second:before {
   transition: all 0.3s;
   padding: 0.2em;
   height: 40%;
-  width: auto; }
+  width: auto;
+  color: blue; }
 
 .fa-whatsapp {
-  background: rgba(161, 161, 153, 0.486);
-  color: rgba(48, 49, 48, 0.274); }
+  background: rgba(161, 161, 153, 0.486); }
 
 .order {
   border-style: inset;
@@ -195,7 +199,9 @@ a.btn-second:before {
 
 .card {
   width: 90%;
-  height: 90%; }
+  height: 90%;
+  transform: translate(2em);
+  border-color: black; }
 
 .menu {
   border-style: outset;

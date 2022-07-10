@@ -22,12 +22,12 @@ h2, option{
 }
 h3{
     font-size: $text-medium;
-    color: rgb(34, 28, 128);
+    color: $primary;
     @include transformar(rotate(20deg));
 }
 h4{
     font-size: $text-medium;
-    color: map-get($color, $secondary);
+    color:map-get($color, primary);
 }
 label{
     font-size:$text-base;
