@@ -6,6 +6,7 @@
 }
 html{
     font-size: 62.5%;
+    border-style: ridge;
 }
 body{
     font-family:$font-principal;
@@ -63,6 +64,7 @@ a{
 img {
     cursor: pointer;
     height: 3em;
+    border-style: ridge;
 } 
 img:hover{
     filter: blur(0.5px);

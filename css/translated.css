@@ -28,7 +28,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  border-style: ridge; }
 
 body {
   font-family: "Papyrus", cursive;
@@ -89,7 +90,8 @@ a {
 
 img {
   cursor: pointer;
-  height: 3em; }
+  height: 3em;
+  border-style: ridge; }
 
 img:hover {
   filter: blur(0.5px);
@@ -239,7 +241,7 @@ a.btn-second:before {
 .order {
   border-style: inset;
   background-color: #0a103057;
-  background-image: url(../IMAGENES/vgde.JPG);
+  background-image: url(../IMAGENES/vgde.jpg);
   background-repeat: no-repeat;
   transform: translate(15em); }
 
