@@ -1,20 +1,19 @@
 /*MISC*/
 
-@import './misc/variables';
-@import './misc/mixins';
-@import './misc/normalize';
+@import"./misc/variables";
+@import"./misc/mixins";
+@import"./misc/normalize";
+@import"./misc/mediasqueries.scss";
 
 /*PARTIALS*/
-@import './partials/headers';
-@import './partials/footer';
+@import"./partials/footer" ;
+@import"./partials/headers";
 
 /*VIEWS*/
-@import './views/home';
-@import './views/nosotros';
-@import './views/contacto';
-@import'./views/menu';
-/*Medias Queries*/
-@import'./misc/mediasqueries';
+@import"./views/home";
+@import"./views/nosotros";
+@import"./views/contacto";
+@import"./views/menu";
 
 
 
