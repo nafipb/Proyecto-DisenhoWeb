@@ -1,12 +1,10 @@
 .order{
     border-style: inset;
     @include fondo(dos);
-    background-repeat: no-repeat;
-    transform: translate(15em);
+    transform: translate(17.5em);
 }
 .contacto{
-    transform: translate(10em);
+    transform: translate(17.5em);
     @include fondo(uno);
-    background-repeat:no-repeat;
     border-style: inset;
   }
