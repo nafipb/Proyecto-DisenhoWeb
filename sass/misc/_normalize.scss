@@ -14,16 +14,16 @@ body{
 h1{
     font-size:$text-large;
     color:$primary;
-    @include transformar(rotate(0.20deg))
+    @include transformar(rotate(0.20deg));
 }
 h2, option{
     font-size:$text-medium;
-    color:$alternative
+    color:$alternative;
 }
 h3{
     font-size: $text-medium;
     color: rgb(34, 28, 128);
-    @include transformar(rotate(20deg))
+    @include transformar(rotate(20deg));
 }
 h4{
     font-size: $text-medium;
