@@ -1,22 +1,13 @@
-thead, tbody{
-    width: 90%;
-}
-th,td{
-    border:solid 5px black; 
-    padding: 1em;
-    text-align: center;
-    justify-content: center;
-    width:90%;
-}
-tr:nth-child(even){
-    background-color: darkgrey;
-}
-/* selecciona cualquier elemento <th> cuando está "mantenido(hovered)"*/
-tr:hover td{
-    background-color: rgb(230, 196, 102);
-    color: rgb(171, 84, 31);
-    cursor: pointer;
-}
+
+.card{
+  width: 90%;
+  height: 90%;
+  }
+ .menu{
+    border-style: outset;
+    transform: translate(8em);
+
+  }
 /* burbujas */
 @keyframes flotar {
     to {

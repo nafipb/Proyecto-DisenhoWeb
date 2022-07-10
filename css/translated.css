@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*MISC*/
 /*colors*/
 /*spacings*/
@@ -66,6 +65,11 @@ h5 {
   color: rgba(226, 63, 13, 0.767);
   font-family: "Indie Flower", cursive; }
 
+h6 {
+  color: #242c5f;
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem; }
+
 .letra {
   font-family: "Indie Flower", cursive;
   text-align: right; }
@@ -79,7 +83,7 @@ p {
   color: #18182b;
   word-spacing: 0.5rem; }
 
-a, th, td {
+a {
   font-size: 1.5rem; }
 
 img {
@@ -189,24 +193,13 @@ a.btn-second:before {
   text-align: center;
   border-style: inset; }
 
-thead, tbody {
-  width: 90%; }
+.card {
+  width: 90%;
+  height: 90%; }
 
-th, td {
-  border: solid 5px black;
-  padding: 1em;
-  text-align: center;
-  justify-content: center;
-  width: 90%; }
-
-tr:nth-child(even) {
-  background-color: darkgrey; }
-
-/* selecciona cualquier elemento <th> cuando está "mantenido(hovered)"*/
-tr:hover td {
-  background-color: #e6c466;
-  color: #ab541f;
-  cursor: pointer; }
+.menu {
+  border-style: outset;
+  transform: translate(8em); }
 
 /* burbujas */
 @keyframes flotar {
@@ -291,7 +284,12 @@ tr:hover td {
       transform: translate(5em); }
     body .order, body .contacto {
       transform: translate(2em);
-      width: 90%; } }
+      width: 90%; }
+    body .menu {
+      transform: translate(3em); }
+    body .card {
+      width: 90%;
+      transform: translate(3em); } }
 
 /*para portatil*/
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -327,4 +325,9 @@ tr:hover td {
       width: 90%; }
     body .logo {
       width: 70%;
-      height: 70%; } }
+      height: 70%; }
+    body .menu {
+      transform: translate(2em); }
+    body .card {
+      width: 90%;
+      transform: translate(1em); } }

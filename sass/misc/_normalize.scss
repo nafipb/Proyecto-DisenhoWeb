@@ -39,6 +39,11 @@ h5{
     color:$alternative;
     font-family: $font-secondary;
 }
+h6{
+    color:$primary;
+    font-family: $font-secondary;
+    font-size: $text-small;
+}
 .letra{
     font-family: $font-secondary;
     text-align: right;
@@ -52,7 +57,7 @@ p{
     color:$black;
     word-spacing: $spacing-xmall;
 }
-a, th, td {
+a{
     font-size:$text-xsmall;
 }
 img {

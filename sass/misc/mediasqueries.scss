@@ -15,6 +15,13 @@
             transform: translate(2em);
             width: 90%;
         }
+        .menu{
+            transform: translate(3em);
+        }   
+        .card{
+            width: 90%;
+            transform: translate(3em);
+        }
     }
 }
 /*para portatil*/
@@ -63,5 +70,12 @@
             width:70%;
             height:70%;
         }
+        .menu{
+            transform: translate(2em);
+        }   
+        .card{
+            width: 90%;
+            transform: translate(1em);
+        }
     }
-}
+    }
