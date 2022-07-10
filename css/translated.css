@@ -104,23 +104,31 @@ img:hover {
 
 /*responsive*/
 /*para tables*/
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   body {
     background-color: #e7e2d8;
     padding-top: 3.2em;
     flex-direction: column; }
     body .header, body .footer {
-      transform: translate(0em); }
-    body .intro, body .galeria {
-      transform: translate(5em); }
+      transform: translate(-0.3em); }
+    body .galeria {
+      transform: translate(3.5em); }
     body .order, body .contacto {
-      transform: translate(2em);
+      transform: translate(1.5em);
       width: 90%; }
     body .menu {
-      transform: translate(3em); }
+      transform: translate(2.5em); }
     body .card {
       width: 90%;
-      transform: translate(1em); } }
+      transform: translate(1em); }
+    body .carousel {
+      transform: translate(2em); }
+    body .acordion {
+      transform: translate(0em); }
+    body .intro {
+      transform: translate(1em); }
+    body .navegacion {
+      transform: translate(-2em); } }
 
 /*para portatil*/
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -138,7 +146,7 @@ img:hover {
       width: 90%; } }
 
 /*para mobil*/
-@media (min-width: 200px) and (max-width: 320px) {
+@media (min-width: 0px) and (max-width: 319px) {
   body {
     background-color: floralwhite;
     padding-top: 1.5em; }
@@ -155,7 +163,7 @@ img:hover {
     body .card, body .car-body {
       width: 90%;
       transform: translate(1.5em); }
-    body .acordion, body .intro {
+    body .acordion {
       transform: translate(-2em); }
     body .carousel {
       transform: translate(-4em); }
