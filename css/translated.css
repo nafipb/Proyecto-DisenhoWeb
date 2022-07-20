@@ -11,7 +11,7 @@
   padding: 2px 0;
   margin: 2px auto;
   border-radius: 2px;
-  color: #18191a;
+  color: #2e302e;
   cursor: pointer; }
 
 .b_inicio {
@@ -37,14 +37,14 @@ body {
 
 h1 {
   font-size: 4.5rem;
-  color: #242c5f;
+  color: red;
   -webkit-transform: rotate(0.2deg);
   -ms-transform: rotate(0.2deg);
   transform: rotate(0.2deg); }
 
 h2, option {
   font-size: 2.5rem;
-  color: rgba(82, 32, 16, 0.767); }
+  color: #18182b; }
 
 h3 {
   font-size: 2.5rem;
@@ -55,30 +55,31 @@ h3 {
 
 h4 {
   font-size: 2.5rem;
-  color: #1f2441; }
+  color: #041055; }
 
 label {
   font-size: 2rem;
-  color: #1f2441; }
+  color: #041055; }
 
 h5 {
   font-size: 2.5rem;
   text-align: right;
-  color: rgba(82, 32, 16, 0.767);
-  font-family: "Indie Flower", cursive; }
+  color: rgba(28, 10, 51, 0.767);
+  font-family: "Papyrus", cursive; }
 
 h6 {
   color: #242c5f;
-  font-family: "Indie Flower", cursive;
+  font-family: "Papyrus", cursive;
   font-size: 2rem; }
 
 .letra {
-  font-family: "Indie Flower", cursive;
+  font-family: "Papyrus", cursive;
   text-align: right; }
 
 .der {
   color: #e6f3f5;
-  font-family: "Indie Flower", cursive; }
+  font-family: "Courier", cursive;
+  font-size: 1.5rem; }
 
 p {
   font-size: 2rem;
@@ -86,10 +87,14 @@ p {
   word-spacing: 0.5rem; }
 
 a {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  color: #18182b; }
 
 .dropdown-item {
   font-size: xx-small; }
+
+.nav-link {
+  color: #18182b; }
 
 img {
   cursor: pointer;
@@ -185,7 +190,7 @@ img:hover {
   margin: 1em;
   width: 90%;
   background-image: linear-gradient(to right, #928f8f, #a8a4a4);
-  color: #1f2441;
+  color: #041055;
   transform: translate(1em); }
 
 /*Inicio de mi header*/
@@ -217,7 +222,7 @@ img:hover {
   transform: translate(15em); }
 
 .card-header {
-  color: #1f2441; }
+  color: #041055; }
 
 /* Selector CSS por atributo */
 a[href^="tel:"] {
@@ -288,7 +293,7 @@ a.btn-second:before {
     margin-top: 15vh; } }
 
 .burbujas div {
-  background: blue;
+  background: rgba(243, 12, 12, 0.966);
   border-radius: 100%;
   position: absolute;
   bottom: 0;
@@ -349,4 +354,4 @@ a.btn-second:before {
   100% {
     transform: rotate(90deg);
     bottom: 100vh;
-    background: #1b8fc5; } }
+    background: #f7f30c; } }

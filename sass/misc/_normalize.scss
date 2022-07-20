@@ -14,12 +14,12 @@ body{
 }
 h1{
     font-size:$text-large;
-    color:$primary;
+    color:$icono-fono;
     @include transformar(rotate(0.20deg));
 }
 h2, option{
     font-size:$text-medium;
-    color:$alternative;
+    color:$black;
 }
 h3{
     font-size: $text-medium;
@@ -38,20 +38,21 @@ h5{
     font-size:$text-medium;
     text-align: right;
     color:$alternative;
-    font-family: $font-secondary;
+    font-family: $font-principal;
 }
 h6{
     color:$primary;
-    font-family: $font-secondary;
+    font-family: $font-principal;
     font-size: $text-small;
 }
 .letra{
-    font-family: $font-secondary;
+    font-family: $font-principal;
     text-align: right;
 }
 .der{
     color:$secondary;
     font-family: $font-secondary;
+    font-size: $text-xsmall;
 }
 p{
     font-size:$text-small;
@@ -60,9 +61,13 @@ p{
 }
 a{
     font-size:$text-xsmall;
+    color:$black;
 }
 .dropdown-item{
     font-size: xx-small;
+}
+.nav-link{
+    color:$black;
 }
 img {
     cursor: pointer;

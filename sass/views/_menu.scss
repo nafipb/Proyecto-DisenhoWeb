@@ -14,7 +14,7 @@
     }
   }
   .burbujas div {
-    background: blue;
+    background: rgba(243, 12, 12, 0.966);
     border-radius: 100%;
     position: absolute;
     bottom: 0;
@@ -78,6 +78,6 @@
       100% {
         transform: rotate(90deg);
         bottom: 100vh;
-        background: rgb(27, 143, 197);
+        background: rgb(247, 243, 12);
       }
     }
